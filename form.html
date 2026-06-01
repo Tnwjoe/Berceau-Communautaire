@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+    <nav>
+        <h2>Plateau des Professeurs</h2>
+
+    </nav>
+    <h2>Donnez nous votre avis ici</h2>
+
+    <h3> Que pensez vous de notre page ? toutes remarque est bonne a prendre</h3>
+
+    <form id="avisForm">
+        <label> nom :</label>
+        <input type="text" id="nom" name="nom">
+
+        <br><br>
+        <label> Message :</label>
+        <textarea id="message" name="message"></textarea>
+
+        <br><br>
+
+        <button type="submit">Envoyer </button>
+    </form>
+
+    <p id="resultat"></p>
+
+    <form id="noteForm">
+
+        <p>Donnez une note :</p>
+        <div class="choix">
+            <label>
+                <input type="radio" name="note"> 1 étoile
+            </label>
+            <label>
+                <input type="radio" name="note"> 2 étoiles
+            </label>
+            <label>
+                <input type="radio" name="note"> 3 étoiles
+            </label>
+            <label>
+                <input type="radio" name="note"> 4 étoiles
+            </label>
+            <label>
+                <input type="radio" name="note"> 5 étoiles
+            </label>
+        </div>
+
+    </form>
+
+    <section class="hero">
+        <button onclick="window.location.href='index.html'">Retour à l'accueil</button>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

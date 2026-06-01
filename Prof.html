@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style2.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <title>Berceau Professionnel</title>
+</head>
+
+<body>
+
+    <nav>
+        <h2>Berceau Santé</h2>
+    </nav>
+
+    <h1>Santé et bien-être communautaire</h1>
+
+    <!-- Formulaire -->
+
+    <form id="professionalForm">
+
+        <input type="text" id="name" placeholder="Nom" required>
+
+        <input type="text" id="role" placeholder="Métier" required>
+
+        <input type="text" id="specialty" placeholder="Spécialité" required>
+
+        <input type="text" id="location" placeholder="Localisation" required>
+
+        <input type="text" id="phone" placeholder="Téléphone" required>
+
+        <button type="submit">
+            Ajouter
+        </button>
+
+    </form>
+
+    <!-- Recherche -->
+
+    <section class="hero">
+
+        <input type="text" id="search" placeholder="Rechercher...">
+
+        <h2>
+            Ici vous pouvez retrouver tous les professionnels
+        </h2>
+
+        <!-- Les cartes seront ajoutées par JavaScript -->
+
+        <div class="cards">
+        </div>
+
+    </section>
+
+    <!-- Filtres -->
+
+    <div class="filters">
+
+        <button onclick="filterCards('Tous')">
+            Tous
+        </button>
+
+        <button onclick="filterCards('Médecin')">
+            Médecins
+        </button>
+
+        <button onclick="filterCards('Ingénieur')">
+            Ingénieurs
+        </button>
+
+        <button onclick="filterCards('Professeur')">
+            Professeurs
+        </button>
+
+    </div>
+
+    <!-- Retour -->
+
+    <section class="hero">
+
+        <button onclick="window.location.href='index.html'">
+            Retour à l'accueil
+        </button>
+
+    </section>
+
+    <!-- JavaScript -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
