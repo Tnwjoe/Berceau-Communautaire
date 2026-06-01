@@ -54,6 +54,35 @@ button:hover {
     opacity: 0.9;
 }
 
+.menu-buttons {
+    display: flex;
+
+    gap: 20px;
+
+    width: 90%;
+
+    padding: 20px;
+
+    display: center;
+
+    border-radius: 20px;
+
+    font-size: 20px;
+
+    border: none;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    background: #f4cc00;
+
+    color: white;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+
+}
+
 
 h1 {
     font-size: 42px;
