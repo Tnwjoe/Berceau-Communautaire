@@ -83,8 +83,7 @@ button:hover {
 
 }
 
-.button i {
-
+i {
     margin-right: 10px;
 }
 
@@ -168,44 +167,5 @@ p {
         opacity: 1;
         transform: translateY(0);
     }
-
-}
-
-#darkModeBtn {
-
-    width: 50px;
-
-    height: 50px;
-
-    border-radius: 50%;
-
-    border: none;
-
-    cursor: pointer;
-
-    font-size: 18px;
-
-}
-
-.dark {
-
-    background: #0f172a;
-
-}
-
-.dark .card {
-    background: #1e293b;
-    color: white;
-}
-
-.dark nav {
-    background: #1e293b;
-}
-
-.dark h1,
-.dark p,
-.dark h3 {
-
-    color: white;
 
 }
