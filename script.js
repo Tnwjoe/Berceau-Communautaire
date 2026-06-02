@@ -45,7 +45,7 @@ let professionals =
         {
             id: 2,
             name: "Ing. Ndelo",
-            role: "Ingénieur informaticien",
+            role: "Ingénieur",
             specialty: "programmation et développement web",
             location: "plateau",
             phone: "+243 xxx xxx"
@@ -85,6 +85,10 @@ let editingId = null; // Variable pour suivre l'ID en cours de modification
 // Sélection des éléments du DOM
 
 const cards = document.querySelector(".cards");
+const counter = document.getElementById("counter");
+
+console.log(counter);
+
 
 
 // Création d'une carte
@@ -114,19 +118,29 @@ function createCard(person) {
             <i class="fa-solid fa-phone"></i>
             ${person.phone}
         </p>
+       
+           <div class="buttons">
 
-        <button>Contacter</button>
+    <button class="contact-btn">
+        📞 Contacter
+    </button>
 
-        <button onclick="editProfessional(${person.id})">
-    ✏️ Modifier
+    <button class="edit-btn"
+        onclick="editProfessional(${person.id})">
+        ✏️ Modifier
+    </button>
+
+    <button class="delete-btn"
+        onclick="deleteProfessional(${person.id})">
+        🗑️ Supprimer
+    </button>
+
+    <button class="profile-btn"
+onclick="viewProfile(${person.id})">
+    👁️ Profil
 </button>
 
-        <button onclick="deleteProfessional(${person.id})">
-    🗑️ Supprimer
-</button>
-
-    </div>
-
+</div>
     `;
 
 }
@@ -143,11 +157,19 @@ function displayCards(data) {
 
     });
 
+    // Mise à jour du compteur
+    counter.textContent =
+        `${data.length} professionnels enregistrés`;
+
+
+
 }
 
 // Filtrage par rôle
 
 function filterCards(role) {
+
+    console.log("Filtre :", role);
 
     if (role === "Tous") {
 
@@ -156,7 +178,10 @@ function filterCards(role) {
     } else {
 
         const filtered = professionals.filter(person =>
-            person.role === role
+
+            person.role.toLowerCase().includes(role.toLowerCase())
+
+
         );
 
         displayCards(filtered);
@@ -208,7 +233,7 @@ const phoneInput = document.getElementById("phone");
 form.addEventListener("submit", function (event) {
 
     event.preventDefault();
-
+    // Vérification si on est en mode édition ou création
     if (editingId) {
 
         professionals = professionals.map(person =>
@@ -258,10 +283,22 @@ form.addEventListener("submit", function (event) {
     form.reset();
 
 });
-
+// Fonction de suppression
 function deleteProfessional(id) {
 
     console.log("ID reçu :", id);
+
+
+    const confirmation = confirm(
+        "Voulez-vous vraiment supprimer ce professionnel ?"
+
+    );
+
+
+    if (!confirmation) {
+        return;
+    }
+
 
     professionals = professionals.filter(person =>
 
@@ -295,3 +332,19 @@ function editProfessional(id) {
     editingId = id;
 
 }
+// Fonction de visualisation du profil
+function viewProfile(id) {
+
+    localStorage.setItem(
+        "selectedProfessional",
+        id
+    );
+
+    window.location.href =
+        "profil.html";
+
+}
+
+
+
+

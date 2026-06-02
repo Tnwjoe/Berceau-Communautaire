@@ -39,6 +39,7 @@
 
         <button type="submit">
             Ajouter
+
         </button>
 
     </form>
@@ -53,10 +54,15 @@
             Ici vous pouvez retrouver tous les professionnels
         </h2>
 
+        <!--conteur pour afficher le nombre de professionnels -->
+        <h2 id="counter">Nombre de professionnels : 0</h2>
+
+
         <!-- Les cartes seront ajoutées par JavaScript -->
 
-        <div class="cards">
-        </div>
+        <div class="cards"></div>
+
+
 
     </section>
 
@@ -78,6 +84,42 @@
 
         <button onclick="filterCards('Professeur')">
             Professeurs
+        </button>
+
+        <button onclick="filterCards('plombier')">
+            plombiers
+        </button>
+
+        <button onclick="filterCards('Electricien')">
+            Electriciens
+        </button>
+
+        <button onclick="filterCards('Mécanicien')">
+            Mécaniciens
+        </button>
+
+        <button onclick="filterCards('Coiffeur')">
+            Coiffeurs
+        </button>
+
+        <button onclick="filterCards('Couturier')">
+            Couturiers
+        </button>
+
+        <button onclick="filterCards('Agriculteur')">
+            Agriculteurs
+        </button>
+
+        <button onclick="filterCards('Artisan')">
+            Artisans
+        </button>
+
+        <button onclick="filterCards('Commerçant')">
+            Commerçants
+        </button>
+
+        <button onclick="filterCards('Autres')">
+            Autres
         </button>
 
     </div>
