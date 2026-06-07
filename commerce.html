@@ -17,10 +17,9 @@
     <nav>
         <h2>
             <i class="fa-solid fa-store"></i>
-            PlateauCommerce
-        </h2>
+            Plateau Commerce
 
-        </button>
+            </button>
     </nav>
     <h1><strong>PlateauCommerce</strong></h1>
     <section class="hero">
@@ -30,106 +29,54 @@
         <p>vous pouvez trouver des restaurants, des magasins de vêtements et bien plus encore .</p>
 
     </section>
-    <section class="hero">
-        <article>
-            <h2>Commerces et activités à découvrir</h2>
-            .</li>
-            </div>
-            <div class="card">
 
-                <h2>👗<p> Luxy Boutique</p>
-                </h2>
 
-                <p>
-                    Magasin de vêtements à la mode
-                </p>
+    <nav>
 
-                <p>📞 +243 xxx xxx</p>
+        <h2>
+            <i class="fa-solid fa-shop"></i>
+            Commerces du Quartier
+        </h2>
 
-                <button>Contacter</button>
+    </nav>
 
-            </div>
+    <section class="hero-section">
 
-            <div class="card">
+        <h1>Annuaire des commerces</h1>
 
-                <h2>🍹 <p> Le Club des Residents</p>
-                </h2>
+        <p>
 
-                <p>
-                    Bar animé avec bonne musique
-                </p>
+            Retrouvez les commerces et services
+            disponibles dans votre quartier.
 
-                <p>📞 +243 xxx xxx</p>
+        </p>
 
-                <button>Contacter</button>
-            </div>
-
-            <div class="card">
-
-                <h2>🌱 <p> La Pepiniere </p>
-                </h2>
-
-                <p>
-                    produits bio et locaux a base de manioc
-                </p>
-
-                <p>📞 +243 xxx xxx</p>
-
-                <button>Contacter</button>
-
-            </div>
-            <div class="card">
-
-                <h2>🍽 <p> Restaurant Le Manioc </p>
-                </h2>
-
-                <p>
-                    Cuisine locale et internationale
-                </p>
-
-                <p>📞 +243 xxx xxx</p>
-
-                <button>Contacter</button>
-            </div>
-            <div class="card">
-
-                <h2>🛍️ <p> Boutique Chic</p>
-                </h2>
-
-                <p>
-                    Magasin de vêtements et accessoires tendance
-                </p>
-
-                <p>📞 +243 xxx xxx</p>
-
-                <button>Contacter</button>
-            </div>
-            <div class="card">
-
-                <h2>🍕 <p> Pizzeria Bella</p>
-                </h2>
-
-                <p>
-                    Pizzeria avec une délicieuse sélection de pizzas
-                </p>
-
-                <p>📞 +243 xxx xxx</p>
-
-                <button>Contacter</button>
-            </div>
-        </article>
     </section>
+    <!-- Formulaire d'ajout de commerce -->
+    <form id="commerceForm">
 
-    <section class="hero">
-        <article>
-            <h2>Événements commerciaux à venir</h2>
-            <p>Restez à l'affût des événements commerciaux à venir dans le quartier, tels que les soldes, les marchés
-                locaux
-                et les festivals de rue. C'est une excellente occasion de soutenir les commerces locaux et de découvrir
-                de
-                nouvelles offres !</p>
-            <button>voir plus</button>
-        </article>
+        <input type="text" id="commerceName" placeholder="Nom du commerce" required>
+
+        <input type="text" id="commerceCategory" placeholder="Catégorie" required>
+
+        <input type="text" id="commerceLocation" placeholder="Localisation" required>
+
+        <input type="text" id="commercePhone" placeholder="Téléphone" required>
+
+        <button type="submit">
+
+            Ajouter
+
+        </button>
+
+    </form>
+
+    <input type="text" id="searchCommerce" placeholder="Rechercher un commerce...">
+
+    <div class="commerce-cards"></div>
+
+    <script src="commerce.js"></script>
+
     </section>
 
 

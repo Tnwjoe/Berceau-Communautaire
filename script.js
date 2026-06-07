@@ -149,6 +149,8 @@ onclick="viewProfile(${person.id})">
 // Affichage des cartes
 function displayCards(data) {
 
+    console.log("displayCards exécutée");
+
     cards.innerHTML = "";
 
     data.forEach(person => {
@@ -158,10 +160,7 @@ function displayCards(data) {
     });
 
     // Mise à jour du compteur
-    counter.textContent =
-        `${data.length} professionnels enregistrés`;
-
-
+    counter.textContent = data.length;
 
 }
 

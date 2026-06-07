@@ -20,23 +20,29 @@ if (person) {
 
     profileCard.innerHTML = `
 
-       <div class="profile-icon">
+       <div class="profile-container">
 
-    <i class="fa-solid fa-user"></i>
+    <div class="profile-icon">
 
-        </div>
-            <h2>${person.name}</h2>
+        <i class="fa-solid fa-user"></i>
 
-            <p><strong>${person.role}</strong></p>
+    </div>
 
-            <p>${person.specialty}</p>
+    <h2>${person.name}</h2>
 
-            <p>📍 ${person.location}</p>
+    <h3>${person.role}</h3>
 
-            <p>📞 ${person.phone}</p>
+    <p>${person.specialty}</p>
 
-        </div>
+    <p>📍 ${person.location}</p>
 
+    <p>📞 ${person.phone}</p>
+
+    <button onclick="history.back()">
+        ← Retour
+    </button>
+
+</div>
     `;
 
 }
