@@ -1,4 +1,4 @@
-
+// Sélection de l'élément de recherche
 const search = document.getElementById("search");
 
 if (search) {
@@ -84,8 +84,8 @@ let editingId = null; // Variable pour suivre l'ID en cours de modification
 
 // Sélection des éléments du DOM
 
-const cards = document.querySelector(".cards");
-const counter = document.getElementById("counter");
+const cards = document.querySelector(".cards");// Conteneur des cartes
+const counter = document.getElementById("counter");// Compteur de professionnels
 
 console.log(counter);
 
@@ -220,12 +220,12 @@ const form = document.getElementById("professionalForm");
 
 console.log(form);
 
-
-const nameInput = document.getElementById("name");
-const roleInput = document.getElementById("role");
-const specialtyInput = document.getElementById("specialty");
-const locationInput = document.getElementById("location");
-const phoneInput = document.getElementById("phone");
+// Données des commerces
+const nameInput = document.getElementById("name");// nom du professionnel
+const roleInput = document.getElementById("role");// rôle du professionnel
+const specialtyInput = document.getElementById("specialty");// spécialité du professionnel
+const locationInput = document.getElementById("location");// localisation du professionnel
+const phoneInput = document.getElementById("phone");// téléphone du professionnel
 
 
 //soumission du formulaire
