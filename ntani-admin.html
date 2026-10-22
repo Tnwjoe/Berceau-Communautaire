@@ -1,0 +1,54 @@
+﻿<!doctype html>
+<html lang="fr">
+<head>
+ <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+ <title>Postes Ntani — Administration locale de démonstration</title>
+ <meta name="robots" content="noindex,nofollow">
+ <link rel="stylesheet" href="style.css"><link rel="stylesheet" href="ntani.css">
+</head>
+<body class="ntani-admin">
+ <a class="skip-link" href="#contenu-principal">Aller au contenu</a>
+ <header class="ntani-admin-header wrap"><a class="brand" href="ntani.html"><span class="brand-mark">N</span><span>NTANI<b>Registre local</b></span></a><nav aria-label="Administration locale"><a href="admin.html">Administration générale</a><a href="ntani.html">Consultation Ntani</a></nav></header>
+ <main id="contenu-principal" class="wrap" tabindex="-1">
+ <div class="ntani-section-title"><span class="eyebrow">Démonstration · ce navigateur uniquement</span><h1>Gérer les postes référencés</h1><p>Registre communautaire non officiel, avec une première référence documentaire fournie par le responsable du projet. Aucun compte, authentification ou protection d’accès n’est fourni. Ne saisissez que des informations publiques et vérifiables.</p></div>
+ <div class="ntani-warning" role="note"><strong>Cette administration n’est pas sécurisée.</strong><p>Les informations sont conservées dans ce navigateur et ne sont pas partagées avec la police ni avec d’autres appareils. Ne présentez jamais un emplacement saisi comme une validation officielle.</p></div>
+ <p id="station-registry-status" role="status" aria-live="polite">Chargement du registre local…</p>
+ <div class="ntani-admin-layout">
+ <section aria-labelledby="station-list-heading"><h2 id="station-list-heading">Registre des postes</h2>
+  <label for="station-search">Rechercher par nom, adresse ou quartier<input id="station-search" type="search"></label>
+  <label for="station-filter">Visibilité<select id="station-filter"><option value="">Tous les postes</option><option value="visibles">Visibles</option><option value="masques">Masqués</option></select></label>
+  <div class="ntani-actions"><button id="station-new" class="btn secondary" type="button">Nouveau poste</button><button id="station-refresh" class="btn secondary" type="button">Recharger le registre</button><button id="station-add-reference" class="btn secondary" type="button">Ajouter la référence UNIKIN fournie</button></div>
+  <p id="station-count" role="status" aria-live="polite"></p><div id="station-list" class="ntani-station-list"></div>
+ </section>
+ <section class="ntani-report-card" aria-labelledby="station-form-heading"><h2 id="station-form-heading">Ajouter un poste référencé</h2>
+  <p id="station-feedback" class="ntani-status" role="status" aria-live="polite" tabindex="-1"></p>
+  <form id="station-form">
+   <label for="station-nom">Nom du poste<input id="station-nom" maxlength="150" required autocomplete="off"></label>
+   <label for="station-adresse">Adresse publique<input id="station-adresse" maxlength="300" required autocomplete="off"></label>
+   <label for="station-quartier">Quartier ou commune<input id="station-quartier" maxlength="100"></label>
+   <div class="ntani-coordinate-fields"><label for="station-latitude">Latitude (−90 à 90)<input id="station-latitude" inputmode="decimal" autocomplete="off"></label><label for="station-longitude">Longitude (−180 à 180)<input id="station-longitude" inputmode="decimal" autocomplete="off"></label></div>
+   <p class="ntani-help">Une adresse ne calcule pas de coordonnées. Saisissez une position vérifiée ou utilisez la carte puis confirmez-la. Aucun géocodage automatique n’est utilisé.</p>
+   <label><input id="station-position-confirmed" type="checkbox"> J’ai vérifié manuellement que cette position correspond au poste et à sa source.</label>
+   <button id="station-map-enable" class="btn secondary" type="button">Activer la carte pour vérifier l’emplacement</button>
+   <p class="ntani-help">L’activation contacte unpkg et OpenStreetMap, qui reçoivent notamment votre IP et la zone consultée. Cliquez sur la carte pour proposer une position ; confirmez-la ensuite. Les champs restent utilisables sans carte.</p>
+   <div id="station-map" class="ntani-map ntani-admin-map" role="region" aria-label="Carte de vérification de position ; coordonnées modifiables dans les champs" tabindex="0"><p class="ntani-map-placeholder">Carte non chargée.</p></div><p id="station-map-status" role="status" aria-live="polite">Carte non chargée.</p>
+   <p class="ntani-attribution">© <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">contributeurs OpenStreetMap</a></p>
+   <label for="station-telephonePrincipal">Numéro principal (facultatif)<input id="station-telephonePrincipal" maxlength="40" type="tel" aria-describedby="station-phones-help"></label>
+   <label for="station-telephoneSecondaire">Numéro secondaire (facultatif)<input id="station-telephoneSecondaire" maxlength="40" type="tel" aria-describedby="station-phones-help"></label>
+   <p id="station-phones-help" class="ntani-help">7 à 15 chiffres, préfixe + ou 00 facultatif. Laissez vide tant qu’aucun numéro réel n’est disponible. Aucune ligne d’urgence officielle n’est certifiée par cette interface.</p>
+   <label for="station-horaires">Horaires connus (facultatif)<input id="station-horaires" maxlength="300"></label>
+   <label for="station-informations">Informations pratiques (facultatif)<textarea id="station-informations" maxlength="2000" rows="4"></textarea></label>
+   <label for="station-provenance">Provenance (URL publique vérifiable)<input id="station-provenance" type="url" maxlength="1000" aria-describedby="station-source-help"></label><p id="station-source-help" class="ntani-help">Obligatoire pour la visibilité publique, avec les coordonnées confirmées et la date de vérification.</p>
+   <label for="station-verification">Date de vérification de la source<input id="station-verification" type="date"></label>
+   <p id="station-verification-status" class="ntani-help">Statut : vérification documentaire ; vérification officielle des coordonnées et des contacts en attente.</p><a id="station-source-link" target="_blank" rel="noopener noreferrer" hidden>Consulter la source renseignée</a>
+   <label><input id="station-visible" type="checkbox"> Rendre visible dans la consultation de ce navigateur</label>
+   <button id="station-submit" class="btn primary" type="submit" disabled>Enregistrer localement</button>
+  </form>
+ </section>
+ </div>
+ <noscript><p class="ntani-warning">JavaScript est nécessaire. Aucun formulaire n’est envoyé à un serveur.</p></noscript>
+ </main>
+ <footer class="wrap ntani-footer">Ntani · Berceau communautaire · Administration locale de démonstration</footer>
+ <script src="ntani-stations-data.js"></script><script src="ntani-stations.js"></script><script src="ntani-map.js"></script><script src="ntani-admin.js"></script>
+</body>
+</html>

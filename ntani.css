@@ -1,0 +1,87 @@
+﻿/* Identité Ntani, limitée à ses pages pour préserver Communauté et Tunza. */
+body[data-app="ntani"], body.ntani-admin {
+    --primary:#163653; --primary-light:#e6f1fa; --gold:#163653; --gold2:#4182aa;
+    --background:#f4f7fa; --bg:#f4f7fa; --text-primary:#142d43; --ink:#142d43;
+    --text-secondary:#485e70; --muted:#485e70; --border:#d6e1e9; --line:#d6e1e9;
+    background:var(--bg); color:var(--ink);
+}
+.ntani-page, .ntani-admin { font-family:Manrope,system-ui,sans-serif; }
+.ntani-intro { display:grid; gap:28px; padding-block:48px; }
+.ntani-intro h1 { font-size:clamp(30px,4.5vw,56px); line-height:1.15; letter-spacing:-.035em; margin:16px 0 22px; }
+.ntani-intro p { max-width:620px; font-size:17px; line-height:1.8; color:var(--muted); }
+.ntani-intro-panel { display:flex; flex-direction:column; align-items:center; justify-content:center; min-height:270px; padding:30px; text-align:center; background:linear-gradient(135deg,#102e49,#235474); color:white; border-radius:24px; }
+.ntani-intro-panel p { color:white; font-size:22px; }
+.ntani-intro-panel small { color:#d3e7f6; }
+.ntani-large-shield { display:block; width:72px; height:86px; background:#8cc4e7; clip-path:polygon(50% 0,95% 15%,90% 62%,76% 84%,50% 100%,24% 84%,10% 62%,5% 15%); }
+.ntani-warning { padding:22px; background:#e8f1f8; border:1px solid #b9cfdf; border-left:4px solid #316a94; border-radius:12px; line-height:1.75; }
+.ntani-warning p { margin:8px 0 0; }
+.ntani-section { padding-block:46px; border-bottom:1px solid var(--border); }
+.ntani-section-title { max-width:820px; margin-bottom:24px; }
+.ntani-section-title h1, .ntani-section-title h2 { line-height:1.25; margin:12px 0; }
+.ntani-section-title p, .ntani-help { color:var(--muted); line-height:1.75; }
+.ntani-actions { display:flex; flex-wrap:wrap; gap:12px; margin-block:18px; align-items:center; }
+.ntani-map-toolbar { display:flex; flex-direction:column; gap:12px; margin-bottom:18px; align-items:flex-start; }
+.ntani-map-toolbar p { font-size:13px; max-width:650px; color:var(--muted); margin:0; }
+.ntani-map { height:400px; width:100%; border:1px solid var(--border); border-radius:18px; background:#e1ebf2; position:relative; isolation:isolate; z-index:0; }
+.ntani-map-placeholder { padding:24px; max-width:540px; }
+.ntani-map.leaflet-container, .ntani-map .leaflet-control { font-family:inherit; }
+.ntani-map .leaflet-control-attribution { color:#243a4c; background:#fff; font-size:11px; }
+.ntani-map .leaflet-control-attribution a { color:#174d78; text-decoration:underline; }
+.ntani-shield-marker { background:none; border:0; }
+.ntani-shield-marker span { display:block; width:100%; height:100%; background:#163f61; border:2px solid white; clip-path:polygon(50% 0,96% 14%,90% 62%,74% 84%,50% 100%,26% 84%,10% 62%,4% 14%); filter:drop-shadow(0 2px 2px #122c4555); }
+.ntani-shield-marker:focus-visible { outline:3px solid #559bcc; outline-offset:4px; }
+.ntani-attribution, .ntani-status, .ntani-help { font-size:13px; line-height:1.7; }
+.ntani-attribution a, .ntani-station-detail > a:not(.btn) { color:#175c89; text-decoration:underline; }
+.ntani-location-options, .ntani-legacy { margin-block:24px; padding:20px; border:1px solid var(--border); border-radius:14px; background:white; }
+.ntani-location-options summary, .ntani-legacy > summary { cursor:pointer; font-weight:700; min-height:44px; }
+.ntani-search-row { display:flex; flex-wrap:wrap; gap:18px; align-items:end; }
+.ntani-search-row label { flex:1 1 250px; }
+.ntani-page label, .ntani-admin label { display:block; font-weight:600; margin-block:14px; line-height:1.6; }
+.ntani-page :is(input:not([type="checkbox"]):not([type="radio"]),select,textarea), .ntani-admin :is(input:not([type="checkbox"]),select,textarea) { display:block; width:100%; padding:12px; border:1px solid #aebfcd; border-radius:10px; background:white; color:var(--ink); font:inherit; margin-top:6px; }
+.ntani-page input[type="checkbox"], .ntani-admin input[type="checkbox"] { width:18px; height:18px; margin:0 8px 0 0; vertical-align:middle; accent-color:var(--primary); }
+.ntani-directory-layout, .ntani-admin-layout { display:grid; gap:24px; margin-block:22px; align-items:start; }
+.ntani-station-list { display:grid; gap:14px; }
+.ntani-station-card { padding:22px; border:1px solid var(--border); border-radius:16px; background:white; min-width:0; overflow-wrap:anywhere; }
+.ntani-station-card p { margin-block:9px; color:var(--muted); }
+.ntani-station-select { border:0; background:transparent; padding:6px 0; text-align:left; color:var(--primary); font-size:18px; font-weight:800; cursor:pointer; }
+.ntani-station-detail { padding:24px; border:1px solid #9cbcd3; border-radius:16px; background:white; overflow-wrap:anywhere; }
+.ntani-station-detail > a { display:inline-block; margin:8px 8px 8px 0; }
+.ntani-report-card { padding:24px; border:1px solid var(--border); border-radius:20px; background:white; min-width:0; }
+.ntani-report-progress { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:8px; padding:0; list-style:none; counter-reset:etape; }
+.ntani-report-progress li { counter-increment:etape; padding:10px; background:#f0f4f7; color:#485e70; border-radius:8px; font-size:12px; overflow-wrap:anywhere; }
+.ntani-report-progress li::before { content:counter(etape) '. '; }
+.ntani-report-progress li[aria-current="step"] { color:white; background:#163653; font-weight:700; }
+.ntani-report-progress li.complete { background:#deedf7; color:#163653; }
+.ntani-report-step h3 { margin-block:26px 16px; }
+.ntani-report-recap { display:grid; gap:14px; }
+.ntani-report-recap div { padding:14px; background:#f4f7fa; border-radius:10px; }
+.ntani-report-recap dt { font-weight:800; }
+.ntani-report-recap dd { margin:8px 0 0; white-space:pre-wrap; overflow-wrap:anywhere; }
+.ntani-photo-preview { display:block; max-width:100%; max-height:280px; object-fit:contain; border-radius:10px; }
+.ntani-page [hidden], .ntani-admin [hidden] { display:none !important; }
+.ntani-page :is(button,a,input,select,textarea,summary,[tabindex]):focus-visible, .ntani-admin :is(button,a,input,select,textarea,summary,[tabindex]):focus-visible { outline:3px solid #397ca9; outline-offset:4px; }
+.ntani-page .ntani-legacy .wrap { width:100%; }
+.ntani-page .ntani-legacy .ntani-progress { margin:12px 0; }
+.ntani-page .ntani-legacy .ntani-flow-section { padding-block:18px; }
+.ntani-admin-header { display:flex; flex-wrap:wrap; gap:24px; align-items:center; justify-content:space-between; padding-block:24px; border-bottom:1px solid var(--border); }
+.ntani-admin-header nav { display:flex; flex-wrap:wrap; gap:20px; }
+.ntani-admin main { padding-block:32px; }
+.ntani-admin-map { height:300px; }
+.ntani-coordinate-fields { display:grid; gap:14px; grid-template-columns:repeat(2,minmax(0,1fr)); }
+.ntani-footer { padding-block:32px; color:var(--muted); font-size:13px; }
+@media(min-width:760px) {
+    .ntani-intro { grid-template-columns:1.4fr 1fr; padding-block:64px; align-items:center; }
+    .ntani-directory-layout { grid-template-columns:1fr 1fr; }
+    .ntani-admin-layout { grid-template-columns:minmax(260px,.8fr) minmax(0,1.2fr); }
+    .ntani-report-progress { grid-template-columns:repeat(6,minmax(0,1fr)); }
+    .ntani-map-toolbar { flex-direction:row; align-items:center; }
+}
+@media(max-width:420px) {
+    .ntani-map { height:330px; }
+    .ntani-report-card { padding:16px; }
+    .ntani-coordinate-fields { grid-template-columns:1fr; gap:0; }
+    .ntani-page .btn, .ntani-admin .btn { white-space:normal; text-align:center; }
+}
+@media(prefers-reduced-motion:reduce) {
+    body[data-app="ntani"] *, .ntani-admin * { scroll-behavior:auto !important; animation:none !important; transition:none !important; }
+}

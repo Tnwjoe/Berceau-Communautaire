@@ -2,6 +2,8 @@
 
 ## Périmètre
 
+Cette section décrit la livraison historique de phase I. La refonte Ntani ultérieure conserve les scénarios mais ajoute carte, registre local documenté, administration dédiée et préparation en six étapes ; voir [l’architecture Ntani actuelle](ntani.md). Les requêtes cartographiques démarrent uniquement après activation explicite. Les autres applications ne changent pas de domaine métier.
+
 Un seul dépôt et un seul serveur statique hébergent trois applications multipages en HTML, CSS et JavaScript vanilla. Les URL existantes sont conservées. Aucun backend, compte utilisateur, nouvelle transmission réseau ou nouvelle persistance n’est introduit. L’administration ne figure dans aucune navigation publique. Son absence de lien ne protège pas son URL directe ; cette phase ne modifie pas son hébergement.
 
 ## Responsabilités

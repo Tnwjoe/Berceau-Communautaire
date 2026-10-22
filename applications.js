@@ -27,8 +27,9 @@
             description: 'Explorer la sécurité communautaire en démonstration.',
             navigation: [
                 { label: 'Accueil', href: 'ntani.html', pages: ['ntani.html'] },
-                { label: 'Démonstration', href: 'ntani.html#ntani-flow' },
-                { label: 'Suivi fictif', href: 'ntani.html#ntani-tracking', aVenir: true },
+                { label: 'Carte', href: 'ntani.html#ntani-map-section' },
+                { label: 'Postes', href: 'ntani.html#ntani-stations' },
+                { label: 'Signalement', href: 'ntani.html#ntani-report' },
                 { label: 'Informations utiles', href: 'ntani.html#ntani-advice' }
             ]
         }

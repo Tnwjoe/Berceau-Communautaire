@@ -36,7 +36,12 @@ Ouvrir http://localhost:8000/index.html ; arrêter avec Ctrl+C. Un serveur stati
 | `tests/phase-i.cjs` | Vérifications statiques et simulations DOM de navigation, marketplace et parcours Ntani ; ne remplace pas un navigateur. |
 | `tests/phase-j.cjs` | Tests métier et interactions DOM simulées du MVP commerçant, sans stockage ni réseau. |
 | `tests/phase-2.cjs` | Non-régression du stockage local, encodage HTML/URL, validation et opérations administratives, auteurs/catégories, modales et formulaire ; dépend uniquement de Node.js et exécute les scripts réels avec un stockage et un DOM simulés. |
-| `ntani.html`, `ntani.js` | Parcours autonome de simulation en cinq étapes, avec scénarios et lieux fictifs. |
+| `ntani.html`, `ntani.js`, `ntani.css` | Interface propre à Ntani, carte/liste et parcours historique conservé en cinq étapes ; scénarios partagés avec la préparation en six étapes. |
+| `ntani-stations-data.js`, `ntani-stations.js` | Première référence documentaire UNIKIN fournie au projet, schéma et registre local versionné ; aucun poste fictif. |
+| `ntani-map.js`, `ntani-directory.js` | Leaflet chargé sur action, fond OpenStreetMap, boucliers simples, liste de secours, fiches et géolocalisation facultative après accord. |
+| `ntani-report.js` | Préparation en six étapes et photo locale ; aucun envoi ni stockage du brouillon. |
+| `ntani-admin.html`, `ntani-admin.js` | Gestion locale des postes, visibilité, deux numéros, provenance et correction manuelle de position ; aucun accès authentifié. |
+| `tests/ntani.cjs` | Validation du registre et tests des gestionnaires avec DOM/Leaflet/géolocalisation/images simulés ; sans réseau ni navigateur réel. |
 | `form.html` | Formulaire avec confirmation locale, sans envoi. |
 | `admin.html`, `admin.js`, `admin.css` | Administration de démonstration, dépendant de `data.js` et `style.css`. |
 | `style.css` | Styles publics partagés et adaptation aux tailles d’écran. |
@@ -44,7 +49,11 @@ Ouvrir http://localhost:8000/index.html ; arrêter avec Ctrl+C. Un serveur stati
 | `backup-mission2-2026-10-16/` | Sauvegarde de travail, distincte des sources exécutées à la racine. |
 | `AGENTS.md` | Consignes de développement et de documentation dès la phase H. |
 
-Les pages publiques utilisant `app.js` chargent `data.js`, puis `app.js`, puis `applications.js` et `navigation.js`. L’administration charge `data.js` avant `admin.js`. Ntani charge `applications.js`, `navigation.js` et `ntani.js` sans utiliser `app.js`. L’accueil Tunza utilise seulement `applications.js` et `navigation.js`. Les liens restent utilisables sans JavaScript ; l’identité dépend de `data-app`, tandis que `data-page` garde son rôle métier.
+Les pages publiques utilisant `app.js` chargent `data.js`, puis `app.js`, puis `applications.js` et `navigation.js`. L’administration générale charge `data.js` avant `admin.js`. Ntani reste indépendant de `app.js` et `data.js` : après la navigation et les scénarios historiques, il charge les références documentaires, le registre, l’adaptateur cartographique, la consultation et la préparation. L’administration Ntani charge les références, le registre, la carte et son interface dédiée. L’accueil Tunza utilise seulement `applications.js` et `navigation.js`. Les liens restent utilisables sans JavaScript ; l’identité dépend de `data-app`, tandis que `data-page` garde son rôle métier.
+
+La [documentation Ntani](docs/ntani.md) décrit les dépendances, le schéma du registre, les deux numéros de contact, la source UNIKIN, les précautions de cartographie/géolocalisation, le parcours en mémoire et la recette restante. Accès : `ntani.html` pour consulter ; depuis `admin.html`, « Postes Ntani · registre local » ouvre `ntani-admin.html`. La nouvelle clé `ntani.stations.v1` ne modifie aucune collection historique. Une clé absente affiche la référence UNIKIN fournie ; une liste volontairement vide reste vide. L’administration permet alors un réimport explicite de cette référence sans écraser les autres postes.
+
+La carte charge Leaflet 1.9.4 depuis unpkg avec contrôle d’intégrité, puis les tuiles OpenStreetMap, uniquement après activation. La liste fonctionne si la carte échoue. Les champs géographiques ne sont pas déduits d’une adresse. Les coordonnées UNIKIN et la source sont celles communiquées par le responsable du projet, avec une vérification documentaire au 22 octobre 2026 ; la confirmation officielle des coordonnées et des contacts reste en attente. Les deux numéros sont vides au départ, et seuls des numéros syntaxiquement valides produisent des liens `tel:`. Ces liens ne sont pas présentés comme des lignes d’urgence officielles. Aucun autre poste ni aucune barrière n’est inventé.
 
 Après modification de la configuration, lancer `node tools/synchroniser-navigation.cjs`, puis `node tools/synchroniser-navigation.cjs --check`. Exécuter `node tests/phase-i.cjs` pour les contrôles statiques et les simulations. Node.js est requis pour ces outils de développement, sans installation npm ; le serveur du site reste statique. Les contrôles visuels et clavier dans un véritable navigateur restent à réaliser, aucun navigateur connecté n’étant disponible pendant la phase I.
 
@@ -95,4 +104,4 @@ Les dimensions et la provenance détaillée seront documentées après réceptio
 5. Vérifier les pages concernées sur ordinateur et mobile : navigation, filtres, parcours au clavier et console. Si le stockage change, vérifier la lecture après rechargement. Exécuter les contrôles de phase I décrits ci-dessus ; ils utilisent un DOM simulé et ne prouvent pas le fonctionnement dans un navigateur. Aucune compilation n’est nécessaire.
 6. Décrire le problème résolu, les changements, les vérifications effectuées et les limites restantes dans la proposition de contribution.
 
-Ces conventions s’appliquent dès la phase H et aux phases suivantes. La phase I sépare les interfaces des trois applications ; la phase J ajoute la démonstration Tunza Business. Le suivi fictif Ntani reste à venir. Le manifeste de phase H est préservé, sans génération ni intégration de photographies.
+Ces conventions s’appliquent dès la phase H et aux phases suivantes. La phase I sépare les interfaces des trois applications ; la phase J ajoute la démonstration Tunza Business. La refonte Ntani ajoute un registre local documenté et une préparation sans transmission ; le suivi fictif reste à venir. Exécuter aussi `node tests/ntani.cjs` après une modification Ntani. Le manifeste de phase H est préservé, sans génération ni intégration de photographies.
