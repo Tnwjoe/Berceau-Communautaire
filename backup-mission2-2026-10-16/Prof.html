@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Annuaire — Berceau Communautaire</title>
+        <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body data-page="directory">
+        <!-- Navigation -->
+        <header class="site-header">
+            <a class="brand" href="index.html">
+                <span class="brand-mark">BC</span>
+                <span>
+                    Berceau
+                    <b>Communautaire</b>
+                </span>
+            </a>
+            <button class="nav-toggle" aria-label="Menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <nav class="main-nav">
+                <a href="index.html">Accueil</a>
+                <a href="actualites.html">Actualités</a>
+                <a href="commerce.html">Commerces</a>
+                <a class="active" href="Prof.html">Annuaire</a>
+                <a class="nav-cta" href="form.html">Nous écrire</a>
+            </nav>
+        </header>
+        <!-- Contenu principal -->
+        <main>
+            <section class="page-hero">
+                <div class="wrap">
+                    <span class="eyebrow">Des compétences à proximité</span>
+                    <h1>Le bon professionnel, près de vous.</h1>
+                    <p>Parcourez un annuaire clair de professionnels locaux et repérez facilement les profils certifiés par Berceau Communautaire.</p>
+                </div>
+            </section>
+            <section class="wrap section">
+                <div class="toolbar">
+                    <label class="field">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input id="listing-search" placeholder="Nom, métier ou spécialité...">
+                    </label>
+                    <label class="field">
+                        <select id="category-filter"></select>
+                    </label>
+                    <label class="field">
+                        <select id="location-filter"></select>
+                    </label>
+                    <button id="reset-filters" class="btn secondary">Réinitialiser</button>
+                </div>
+                <div class="result-row">
+                    <strong id="result-count"></strong>
+                    <span class="meta">
+                        <i class="fa-solid fa-circle-check"></i>
+                        Profils certifiés identifiés
+                    </span>
+                </div>
+                <div id="listing-grid" class="pro-grid"></div>
+            </section>
+        </main>
+        <!-- Pied de page -->
+        <footer>
+            <div class="footer-bottom wrap">© 2026 Berceau Communautaire · Kinshasa, RDC</div>
+        </footer>
+        <script src="data.js"></script>
+        <script src="app.js"></script>
+    </body>
+</html>

@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Tunza Business : démonstration locale de gestion des produits, du stock et des ventes fictives.">
+    <title>Tunza Business — Démonstration de gestion</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="tunza-business.css">
+</head>
+<body data-page="tunza-business" data-app="tunza">
+    <a class="skip-link" href="#contenu-principal">Aller au contenu</a>
+<header class="site-header ecosystem-header">
+<a class="brand" href="tunza.html" aria-label="TUNZA, accueil"><span class="brand-mark" aria-hidden="true">T</span><span><span class="brand-name">TUNZA</span><b class="brand-signature">Le commerce de proximité</b></span></a>
+<nav class="main-nav" data-app-navigation aria-label="Navigation TUNZA"><a href="tunza.html">Accueil</a>
+<a href="commerce.html">Marketplace</a>
+<a href="tunza-business.html" class="active" aria-current="page">Espace commerçant</a></nav>
+<details class="ecosystem-switcher"><summary>Écosystème Berceau communautaire</summary><nav class="ecosystem-links" aria-label="Applications de l’écosystème Berceau communautaire"><a href="index.html"><strong>Berceau communautaire</strong><span>La communauté et les informations locales.</span></a>
+<a href="tunza.html" data-current-app="true"><strong>TUNZA</strong><span>Découvrir les commerces et leurs vitrines.</span></a>
+<a href="ntani.html"><strong>NTANI</strong><span>Explorer la sécurité communautaire en démonstration.</span></a></nav></details>
+</header>
+    <main id="contenu-principal" tabindex="-1" class="business-page">
+        <p class="business-demo-banner" role="note"><strong>Démonstration — données fictives. Aucune opération commerciale réelle.</strong></p>
+        <div class="wrap">
+            <section class="business-heading">
+                <div><span class="eyebrow">Tunza Business · prototype local</span><h1>Votre activité, en démonstration.</h1><p>Explorez la gestion de produits, de stock et de ventes fictives. Aucun compte authentifié ; aucune modification de boutique publique.</p></div>
+                <button id="business-reset" class="btn secondary" type="button" disabled>Réinitialiser la démonstration</button>
+            </section>
+            <nav class="business-sections" aria-label="Sections de Tunza Business">
+                <a href="#business-overview">Vue d’ensemble</a><a href="#business-products">Produits</a><a href="#business-stock">Stock</a><a href="#business-sales">Ventes simulées</a>
+            </nav>
+            <p class="business-session-note">Les données restent uniquement en mémoire dans cette page. Actualiser ou quitter la page réinitialise la démonstration. La marketplace publique reste indépendante.</p>
+            <noscript><p class="notice">Activez JavaScript pour utiliser la démonstration. Les liens vers Tunza et les autres applications restent accessibles.</p></noscript>
+            <p id="business-feedback" class="business-feedback" role="status" aria-live="polite" aria-atomic="true"></p>
+            <div id="business-workspace" hidden>
+                <section id="business-overview" class="business-section" aria-labelledby="overview-heading">
+                    <span class="eyebrow">Vue d’ensemble</span><h2 id="overview-heading">Les indicateurs de votre démonstration</h2>
+                    <dl class="business-metrics">
+                        <div><dt>Produits</dt><dd id="metric-products"></dd></div>
+                        <div><dt>Valeur du stock actuel</dt><dd id="metric-stock-value"></dd></div>
+                        <div><dt>Produits en stock faible</dt><dd id="metric-low-stock"></dd></div>
+                        <div><dt>Total des ventes fictives</dt><dd id="metric-sales-total"></dd></div>
+                        <div><dt>Ventes fictives</dt><dd id="metric-sales-count"></dd></div>
+                    </dl>
+                    <p class="business-help">Stock faible : quantité inférieure ou égale à <strong>5 unités</strong>, y compris les ruptures. La valeur du stock utilise les prix actuels ; les ventes conservent leurs prix au moment de l’opération.</p>
+                </section>
+                <section id="business-products" class="business-section" aria-labelledby="products-heading">
+                    <span class="eyebrow">Catalogue de démonstration</span><h2 id="products-heading">Produits</h2>
+                    <div class="business-columns">
+                        <div class="business-panel">
+                            <h3 id="product-form-heading">Ajouter un produit fictif</h3>
+                            <form id="product-form" novalidate aria-labelledby="product-form-heading">
+                                <p id="product-error" class="business-error" role="alert" tabindex="-1" hidden></p>
+                                <label for="product-name">Nom</label><input id="product-name" name="nom" required maxlength="100" autocomplete="off">
+                                <label for="product-category">Catégorie</label><input id="product-category" name="categorie" required maxlength="60" autocomplete="off">
+                                <div class="business-form-row">
+                                    <div><label for="product-price">Prix en CDF</label><input id="product-price" name="prix" inputmode="decimal" required aria-describedby="price-help"><small id="price-help">0 ou plus, deux décimales maximum.</small></div>
+                                    <div><label for="product-quantity">Quantité en stock</label><input id="product-quantity" name="quantite" type="number" min="0" step="1" required></div>
+                                </div>
+                                <label for="product-description">Description <span class="business-help">(facultative)</span></label><textarea id="product-description" name="description" maxlength="500" rows="3"></textarea>
+                                <p id="product-edit-note" class="business-help" hidden>Modifier la quantité crée une correction dans l’historique du stock. Les ventes passées restent inchangées.</p>
+                                <div class="business-actions"><button id="product-submit" class="btn primary" type="submit">Ajouter le produit fictif</button><button id="product-cancel" class="btn secondary" type="button" hidden>Annuler la modification</button></div>
+                                <p id="product-feedback" class="business-feedback" role="status" aria-live="polite" aria-atomic="true"></p>
+                            </form>
+                        </div>
+                        <div>
+                            <div class="business-filters"><div><label for="product-search">Rechercher un produit</label><input id="product-search" type="search" placeholder="Nom, catégorie ou description"></div><div><label for="product-filter">Catégorie</label><select id="product-filter"><option value="">Toutes les catégories</option></select></div></div>
+                            <p id="product-count" class="business-help" role="status" aria-live="polite"></p>
+                            <div id="product-list" class="business-product-list"></div>
+                        </div>
+                    </div>
+                </section>
+                <section id="business-stock" class="business-section" aria-labelledby="stock-heading">
+                    <span class="eyebrow">Inventaire local</span><h2 id="stock-heading">Stock</h2>
+                    <div class="business-columns">
+                        <div class="business-panel">
+                            <h3>Enregistrer un mouvement fictif</h3>
+                            <form id="stock-form" novalidate>
+                                <p id="stock-error" class="business-error" role="alert" tabindex="-1" hidden></p>
+                                <label for="stock-product">Produit</label><select id="stock-product" required></select>
+                                <p id="stock-available" class="business-help" aria-live="polite"></p>
+                                <label for="stock-type">Type de mouvement</label><select id="stock-type"><option value="entree">Entrée de stock</option><option value="sortie">Sortie de stock</option></select>
+                                <label for="stock-quantity">Quantité du mouvement</label><input id="stock-quantity" type="number" min="1" step="1" required>
+                                <button id="stock-submit" class="btn primary" type="submit">Confirmer le mouvement fictif</button>
+                                <p id="stock-feedback" class="business-feedback" role="status" aria-live="polite" aria-atomic="true"></p>
+                            </form>
+                        </div>
+                        <div><h3>Disponibilités actuelles</h3><div id="stock-list" class="business-product-list"></div></div>
+                    </div>
+                    <h3>Historique des mouvements fictifs</h3><ol id="stock-history" class="business-history"></ol>
+                </section>
+                <section id="business-sales" class="business-section" aria-labelledby="sales-heading">
+                    <span class="eyebrow">Sans commande ni paiement</span><h2 id="sales-heading">Ventes simulées</h2>
+                    <div class="business-columns">
+                        <div class="business-panel">
+                            <h3>Préparer une vente fictive</h3>
+                            <form id="sale-form" novalidate>
+                                <p id="sale-error" class="business-error" role="alert" tabindex="-1" hidden></p>
+                                <label for="sale-product">Produit</label><select id="sale-product" required></select>
+                                <p id="sale-available" class="business-help" aria-live="polite"></p>
+                                <label for="sale-quantity">Quantité vendue</label><input id="sale-quantity" type="number" min="1" step="1" required>
+                                <p class="business-sale-total">Total fictif : <output id="sale-total" for="sale-product sale-quantity" aria-live="polite">—</output></p>
+                                <p id="sale-preview-help" class="business-help" aria-live="polite">Choisissez un produit et une quantité pour calculer le total.</p>
+                                <button id="sale-submit" class="btn primary" type="submit" disabled>Confirmer la vente fictive</button>
+                                <p id="sale-feedback" class="business-feedback" role="status" aria-live="polite" aria-atomic="true"></p>
+                            </form>
+                        </div>
+                        <div><h3>Historique des ventes fictives</h3><p class="business-help">Les libellés et prix sont conservés au moment de la vente, même si un produit est ensuite modifié ou retiré.</p><ol id="sale-history" class="business-history"></ol></div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+    <footer><div class="footer-bottom wrap">© 2026 Tunza Business · Écosystème Berceau communautaire · Démonstration locale</div></footer>
+    <nav class="mobile-nav ecosystem-mobile" data-app-navigation aria-label="Navigation mobile TUNZA"><a href="tunza.html">Accueil</a>
+<a href="commerce.html">Marketplace</a>
+<a href="tunza-business.html" class="active" aria-current="page">Espace commerçant</a></nav>
+<script src="applications.js"></script>
+    <script src="navigation.js"></script>
+    <script src="tunza-business-model.js"></script>
+    <script src="tunza-business.js"></script>
+</body>
+</html>

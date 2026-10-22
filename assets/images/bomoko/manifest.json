@@ -1,0 +1,169 @@
+{
+    "version":  1,
+    "directionArtistique":  {
+                                "accueil":  "Photographie cinématographique",
+                                "publications":  "Photographies documentaires réalistes",
+                                "environnement":  "Environnements urbains congolais contemporains et crédibles",
+                                "representation":  "Personnes, commerces, infrastructures et scènes du quotidien représentés naturellement",
+                                "identite":  "Light Premium de Berceau communautaire",
+                                "avertissement":  "Aucune photographie ne doit être présentée comme la preuve d\u0027un événement réel."
+                            },
+    "illustrations":  [
+                          {
+                              "id":  "01",
+                              "chemin":  "assets/images/bomoko/01-kinshasa-panorama.webp",
+                              "categorie":  "Ville",
+                              "usage":  "Image principale de l\u0027accueil, panorama cinématographique",
+                              "texteAlternatif":  "Vue panoramique illustrée d\u0027une ville congolaise contemporaine sous une lumière naturelle.",
+                              "mention":  "Illustration générée",
+                              "disponible":  false,
+                              "remplacementNeutre":  {
+                                                         "type":  "bloc-neutre",
+                                                         "texte":  "Illustration à venir"
+                                                     }
+                          },
+                          {
+                              "id":  "02",
+                              "chemin":  "assets/images/bomoko/02-avenue-urbaine.webp",
+                              "categorie":  "Ville",
+                              "usage":  "Publications sur la vie urbaine",
+                              "texteAlternatif":  "Avenue urbaine animée dans une ville congolaise contemporaine.",
+                              "mention":  "Illustration générée",
+                              "disponible":  false,
+                              "remplacementNeutre":  {
+                                                         "type":  "bloc-neutre",
+                                                         "texte":  "Illustration à venir"
+                                                     }
+                          },
+                          {
+                              "id":  "03",
+                              "chemin":  "assets/images/bomoko/03-entraide-voisins.webp",
+                              "categorie":  "Communauté",
+                              "usage":  "Publications d\u0027entraide",
+                              "texteAlternatif":  "Voisins échangeant de l\u0027aide dans un cadre de quartier.",
+                              "mention":  "Illustration générée",
+                              "disponible":  false,
+                              "remplacementNeutre":  {
+                                                         "type":  "bloc-neutre",
+                                                         "texte":  "Illustration à venir"
+                                                     }
+                          },
+                          {
+                              "id":  "04",
+                              "chemin":  "assets/images/bomoko/04-nettoyage-communautaire.webp",
+                              "categorie":  "Communauté",
+                              "usage":  "Initiatives de nettoyage",
+                              "texteAlternatif":  "Habitants participant à une activité de nettoyage de quartier.",
+                              "mention":  "Illustration générée",
+                              "disponible":  false,
+                              "remplacementNeutre":  {
+                                                         "type":  "bloc-neutre",
+                                                         "texte":  "Illustration à venir"
+                                                     }
+                          },
+                          {
+                              "id":  "05",
+                              "chemin":  "assets/images/bomoko/05-marche-moderne.webp",
+                              "categorie":  "Commerce",
+                              "usage":  "Publications sur les marchés",
+                              "texteAlternatif":  "Allée d\u0027un marché urbain moderne avec des étals et des passants.",
+                              "mention":  "Illustration générée",
+                              "disponible":  false,
+                              "remplacementNeutre":  {
+                                                         "type":  "bloc-neutre",
+                                                         "texte":  "Illustration à venir"
+                                                     }
+                          },
+                          {
+                              "id":  "06",
+                              "chemin":  "assets/images/bomoko/06-boutique-proximite.webp",
+                              "categorie":  "Tunza",
+                              "usage":  "Vitrines commerciales",
+                              "texteAlternatif":  "Petite boutique de proximité dans un quartier urbain congolais.",
+                              "mention":  "Illustration générée",
+                              "disponible":  false,
+                              "remplacementNeutre":  {
+                                                         "type":  "bloc-neutre",
+                                                         "texte":  "Illustration à venir"
+                                                     }
+                          },
+                          {
+                              "id":  "07",
+                              "chemin":  "assets/images/bomoko/07-transport-urbain.webp",
+                              "categorie":  "Mobilité",
+                              "usage":  "Publications sur les transports",
+                              "texteAlternatif":  "Scène de transport urbain dans une avenue congolaise.",
+                              "mention":  "Illustration générée",
+                              "disponible":  false,
+                              "remplacementNeutre":  {
+                                                         "type":  "bloc-neutre",
+                                                         "texte":  "Illustration à venir"
+                                                     }
+                          },
+                          {
+                              "id":  "08",
+                              "chemin":  "assets/images/bomoko/08-travaux-routiers.webp",
+                              "categorie":  "Mobilité",
+                              "usage":  "Actualités de démonstration sur les infrastructures",
+                              "texteAlternatif":  "Travaux routiers illustratifs sur une avenue urbaine.",
+                              "mention":  "Illustration générée",
+                              "disponible":  false,
+                              "remplacementNeutre":  {
+                                                         "type":  "bloc-neutre",
+                                                         "texte":  "Illustration à venir"
+                                                     }
+                          },
+                          {
+                              "id":  "09",
+                              "chemin":  "assets/images/bomoko/09-jeunes-entrepreneurs.webp",
+                              "categorie":  "Entrepreneuriat",
+                              "usage":  "Activités professionnelles et commerciales",
+                              "texteAlternatif":  "Jeunes professionnels présentant une activité commerciale.",
+                              "mention":  "Illustration générée",
+                              "disponible":  false,
+                              "remplacementNeutre":  {
+                                                         "type":  "bloc-neutre",
+                                                         "texte":  "Illustration à venir"
+                                                     }
+                          },
+                          {
+                              "id":  "10",
+                              "chemin":  "assets/images/bomoko/10-espace-travail.webp",
+                              "categorie":  "Entrepreneuriat",
+                              "usage":  "Fiches professionnelles",
+                              "texteAlternatif":  "Espace de travail partagé dans un environnement urbain contemporain.",
+                              "mention":  "Illustration générée",
+                              "disponible":  false,
+                              "remplacementNeutre":  {
+                                                         "type":  "bloc-neutre",
+                                                         "texte":  "Illustration à venir"
+                                                     }
+                          },
+                          {
+                              "id":  "11",
+                              "chemin":  "assets/images/bomoko/11-passage-pieton.webp",
+                              "categorie":  "Mobilité",
+                              "usage":  "Publications sur la sécurité des piétons",
+                              "texteAlternatif":  "Passage piéton sur une avenue en milieu urbain.",
+                              "mention":  "Illustration générée",
+                              "disponible":  false,
+                              "remplacementNeutre":  {
+                                                         "type":  "bloc-neutre",
+                                                         "texte":  "Illustration à venir"
+                                                     }
+                          },
+                          {
+                              "id":  "12",
+                              "chemin":  "assets/images/bomoko/12-espace-public.webp",
+                              "categorie":  "Communauté",
+                              "usage":  "Publications sur les espaces collectifs",
+                              "texteAlternatif":  "Espace public urbain aménagé avec des arbres et des lieux de passage.",
+                              "mention":  "Illustration générée",
+                              "disponible":  false,
+                              "remplacementNeutre":  {
+                                                         "type":  "bloc-neutre",
+                                                         "texte":  "Illustration à venir"
+                                                     }
+                          }
+                      ]
+}

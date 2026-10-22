@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Commerces — Berceau Communautaire</title>
+        <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body data-page="shops">
+        <!-- Navigation -->
+        <header class="site-header">
+            <a class="brand" href="index.html">
+                <span class="brand-mark">BC</span>
+                <span>
+                    Berceau
+                    <b>Communautaire</b>
+                </span>
+            </a>
+            <button class="nav-toggle" aria-label="Menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <nav class="main-nav">
+                <a href="index.html">Accueil</a>
+                <a href="actualites.html">Actualités</a>
+                <a class="active" href="commerce.html">Commerces</a>
+                <a href="Prof.html">Annuaire</a>
+                <a class="nav-cta" href="form.html">Nous écrire</a>
+            </nav>
+        </header>
+        <!-- Contenu principal -->
+        <main>
+            <section class="page-hero">
+                <div class="wrap">
+                    <span class="eyebrow">Le marché local</span>
+                    <h1>Découvrez les commerces d’ici.</h1>
+                    <p>Restaurants, boutiques et services : trouvez les bonnes adresses qui font battre le cœur du quartier.</p>
+                </div>
+            </section>
+            <section class="wrap section">
+                <div class="toolbar">
+                    <label class="field">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input id="listing-search" placeholder="Rechercher un commerce...">
+                    </label>
+                    <label class="field">
+                        <select id="category-filter"></select>
+                    </label>
+                    <label class="field">
+                        <select id="location-filter"></select>
+                    </label>
+                    <button id="reset-filters" class="btn secondary">Réinitialiser</button>
+                </div>
+                <div class="result-row">
+                    <strong id="result-count"></strong>
+                    <span class="meta">Vitrine locale · pas de vente en ligne</span>
+                </div>
+                <div id="listing-grid" class="shop-grid"></div>
+            </section>
+        </main>
+        <!-- Pied de page -->
+        <footer>
+            <div class="footer-bottom wrap">© 2026 Berceau Communautaire · Kinshasa, RDC</div>
+        </footer>
+        <script src="data.js"></script>
+        <script src="app.js"></script>
+    </body>
+</html>

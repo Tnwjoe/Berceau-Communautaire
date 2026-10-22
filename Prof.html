@@ -1,1 +1,68 @@
-<!doctype html><html lang="fr"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Annuaire — Berceau Communautaire</title><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"><link rel="stylesheet" href="style.css"></head><body data-page="directory"><header class="site-header"><a class="brand" href="index.html"><span class="brand-mark">BC</span><span>Berceau <b>Communautaire</b></span></a><button class="nav-toggle" aria-label="Menu"><i class="fa-solid fa-bars"></i></button><nav class="main-nav"><a href="index.html">Accueil</a><a href="actualites.html">Actualités</a><a href="commerce.html">Commerces</a><a class="active" href="Prof.html">Annuaire</a><a class="nav-cta" href="form.html">Nous écrire</a></nav></header><main><section class="page-hero"><div class="wrap"><span class="eyebrow">Des compétences à proximité</span><h1>Le bon professionnel, près de vous.</h1><p>Parcourez un annuaire clair de professionnels locaux et repérez facilement les profils certifiés par Berceau Communautaire.</p></div></section><section class="wrap section"><div class="toolbar"><label class="field"><i class="fa-solid fa-magnifying-glass"></i><input id="listing-search" placeholder="Nom, métier ou spécialité..."></label><label class="field"><select id="category-filter"></select></label><label class="field"><select id="location-filter"></select></label><button id="reset-filters" class="btn secondary">Réinitialiser</button></div><div class="result-row"><strong id="result-count"></strong><span class="meta"><i class="fa-solid fa-circle-check"></i> Profils certifiés identifiés</span></div><div id="listing-grid" class="pro-grid"></div></section></main><footer><div class="footer-bottom wrap">© 2026 Berceau Communautaire · Kinshasa, RDC</div></footer><script src="data.js"></script><script src="app.js"></script></body></html>
+<!doctype html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Annuaire — Berceau communautaire Communauté</title>
+        <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body data-page="directory" data-app="bomoko">
+        <!-- Navigation -->
+        <a class="skip-link" href="#contenu-principal">Aller au contenu</a>
+<header class="site-header ecosystem-header">
+<a class="brand" href="index.html" aria-label="Berceau communautaire, accueil"><span class="brand-mark" aria-hidden="true">B</span><span><span class="brand-name">Berceau communautaire</span><b class="brand-signature">La communauté, autrement</b></span></a>
+<nav class="main-nav" data-app-navigation aria-label="Navigation Berceau communautaire"><a href="index.html">Accueil</a>
+<a href="actualites.html">Communauté</a>
+<a href="Prof.html" class="active" aria-current="page">Annuaire</a>
+<a href="form.html">Nous écrire</a></nav>
+<details class="ecosystem-switcher"><summary>Écosystème Berceau communautaire</summary><nav class="ecosystem-links" aria-label="Applications de l’écosystème Berceau communautaire"><a href="index.html" data-current-app="true"><strong>Berceau communautaire</strong><span>La communauté et les informations locales.</span></a>
+<a href="tunza.html"><strong>TUNZA</strong><span>Découvrir les commerces et leurs vitrines.</span></a>
+<a href="ntani.html"><strong>NTANI</strong><span>Explorer la sécurité communautaire en démonstration.</span></a></nav></details>
+</header>
+        <!-- Contenu principal -->
+        <main id="contenu-principal" tabindex="-1">
+            <section class="page-hero">
+                <div class="wrap">
+                    <span class="eyebrow">Communauté · Annuaire</span>
+                    <h1>Découvrez les profils professionnels.</h1>
+                    <p>Parcourez les profils et explorez les compétences présentées dans le prototype Berceau communautaire.</p>
+                </div>
+            </section>
+            <section class="wrap section">
+                <p class="demo-notice" role="note"><strong>Prototype de démonstration.</strong> Les profils, coordonnées et lieux affichés sont fictifs. Les statuts présentés ne constituent pas une vérification ou une certification réelle.</p>
+                <div class="toolbar">
+                    <label class="field">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input id="listing-search" aria-label="Rechercher un profil par nom, métier, spécialité ou lieu" placeholder="Nom, métier ou spécialité...">
+                    </label>
+                    <label class="field">
+                        <select id="category-filter" aria-label="Filtrer par métier"></select>
+                    </label>
+                    <label class="field">
+                        <select id="location-filter" aria-label="Filtrer par lieu"></select>
+                    </label>
+                    <button id="reset-filters" class="btn secondary">Réinitialiser</button>
+                </div>
+                <div class="result-row">
+                    <strong id="result-count" aria-live="polite"></strong>
+                    <span class="meta">Profils de démonstration</span>
+                </div>
+                <div id="listing-grid" class="pro-grid"></div>
+            </section>
+        </main>
+        <!-- Pied de page -->
+        <footer>
+            <div class="footer-bottom wrap">© 2026 Berceau communautaire · République démocratique du Congo</div>
+        </footer>
+        <nav class="mobile-nav ecosystem-mobile" data-app-navigation aria-label="Navigation mobile Berceau communautaire"><a href="index.html">Accueil</a>
+<a href="actualites.html">Communauté</a>
+<a href="Prof.html" class="active" aria-current="page">Annuaire</a>
+<a href="form.html">Nous écrire</a></nav>
+<script src="data.js"></script>
+        <script src="app.js"></script>
+        <script src="applications.js"></script>
+<script src="navigation.js"></script>
+    </body>
+</html>

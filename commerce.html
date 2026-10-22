@@ -1,1 +1,66 @@
-<!doctype html><html lang="fr"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Commerces — Berceau Communautaire</title><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"><link rel="stylesheet" href="style.css"></head><body data-page="shops"><header class="site-header"><a class="brand" href="index.html"><span class="brand-mark">BC</span><span>Berceau <b>Communautaire</b></span></a><button class="nav-toggle" aria-label="Menu"><i class="fa-solid fa-bars"></i></button><nav class="main-nav"><a href="index.html">Accueil</a><a href="actualites.html">Actualités</a><a class="active" href="commerce.html">Commerces</a><a href="Prof.html">Annuaire</a><a class="nav-cta" href="form.html">Nous écrire</a></nav></header><main><section class="page-hero"><div class="wrap"><span class="eyebrow">Le marché local</span><h1>Découvrez les commerces d’ici.</h1><p>Restaurants, boutiques et services : trouvez les bonnes adresses qui font battre le cœur du quartier.</p></div></section><section class="wrap section"><div class="toolbar"><label class="field"><i class="fa-solid fa-magnifying-glass"></i><input id="listing-search" placeholder="Rechercher un commerce..."></label><label class="field"><select id="category-filter"></select></label><label class="field"><select id="location-filter"></select></label><button id="reset-filters" class="btn secondary">Réinitialiser</button></div><div class="result-row"><strong id="result-count"></strong><span class="meta">Vitrine locale · pas de vente en ligne</span></div><div id="listing-grid" class="shop-grid"></div></section></main><footer><div class="footer-bottom wrap">© 2026 Berceau Communautaire · Kinshasa, RDC</div></footer><script src="data.js"></script><script src="app.js"></script></body></html>
+<!doctype html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Tunza — Commerces Berceau communautaire</title>
+        <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body data-page="shops" data-app="tunza">
+        <!-- Navigation -->
+        <a class="skip-link" href="#contenu-principal">Aller au contenu</a>
+<header class="site-header ecosystem-header">
+<a class="brand" href="tunza.html" aria-label="TUNZA, accueil"><span class="brand-mark" aria-hidden="true">T</span><span><span class="brand-name">TUNZA</span><b class="brand-signature">Le commerce de proximité</b></span></a>
+<nav class="main-nav" data-app-navigation aria-label="Navigation TUNZA"><a href="tunza.html">Accueil</a>
+<a href="commerce.html" class="active" aria-current="page">Marketplace</a>
+<a href="tunza-business.html">Espace commerçant</a></nav>
+<details class="ecosystem-switcher"><summary>Écosystème Berceau communautaire</summary><nav class="ecosystem-links" aria-label="Applications de l’écosystème Berceau communautaire"><a href="index.html"><strong>Berceau communautaire</strong><span>La communauté et les informations locales.</span></a>
+<a href="tunza.html" data-current-app="true"><strong>TUNZA</strong><span>Découvrir les commerces et leurs vitrines.</span></a>
+<a href="ntani.html"><strong>NTANI</strong><span>Explorer la sécurité communautaire en démonstration.</span></a></nav></details>
+</header>
+        <!-- Contenu principal -->
+        <main id="contenu-principal" tabindex="-1">
+            <section class="page-hero">
+                <div class="wrap">
+                    <span class="eyebrow">Tunza · le commerce local</span>
+                    <h1>Les bonnes adresses, près de vous.</h1>
+                    <p>Découvrez les commerces et services de la communauté, puis consultez leur fiche pour en savoir plus.</p>
+                </div>
+            </section>
+            <section class="wrap section">
+                <p class="demo-notice" role="note"><strong>Vitrine de démonstration.</strong> Les commerces, descriptions et lieux affichés sont des exemples. Aucune commande ni transaction n’est proposée.</p>
+                <div class="toolbar">
+                    <label class="field">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input id="listing-search" type="search" aria-label="Rechercher un commerce par nom, description ou lieu" placeholder="Rechercher un commerce...">
+                    </label>
+                    <label class="field">
+                        <select id="category-filter" aria-label="Filtrer les commerces par catégorie"></select>
+                    </label>
+                    <label class="field">
+                        <select id="location-filter" aria-label="Filtrer les commerces par localisation"></select>
+                    </label>
+                    <button id="reset-filters" class="btn secondary">Réinitialiser</button>
+                </div>
+                <div class="result-row">
+                    <strong id="result-count" aria-live="polite"></strong>
+                    <span class="meta">Vitrine uniquement · sans vente en ligne</span>
+                </div>
+                <div id="listing-grid" class="shop-grid"></div>
+            </section>
+        </main>
+        <!-- Pied de page -->
+        <footer>
+            <div class="footer-bottom wrap">© 2026 Berceau communautaire · République démocratique du Congo</div>
+        </footer>
+        <nav class="mobile-nav ecosystem-mobile" data-app-navigation aria-label="Navigation mobile TUNZA"><a href="tunza.html">Accueil</a>
+<a href="commerce.html" class="active" aria-current="page">Marketplace</a>
+<a href="tunza-business.html">Espace commerçant</a></nav>
+<script src="data.js"></script>
+        <script src="app.js"></script>
+        <script src="applications.js"></script>
+<script src="navigation.js"></script>
+    </body>
+</html>

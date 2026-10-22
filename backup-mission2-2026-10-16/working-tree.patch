@@ -1,0 +1,2013 @@
+diff --git a/Prof.html b/Prof.html
+index 7a5b859..03f3d82 100644
+--- a/Prof.html
++++ b/Prof.html
+@@ -1 +1,72 @@
+-<!doctype html><html lang="fr"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Annuaire — Berceau Communautaire</title><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"><link rel="stylesheet" href="style.css"></head><body data-page="directory"><header class="site-header"><a class="brand" href="index.html"><span class="brand-mark">BC</span><span>Berceau <b>Communautaire</b></span></a><button class="nav-toggle" aria-label="Menu"><i class="fa-solid fa-bars"></i></button><nav class="main-nav"><a href="index.html">Accueil</a><a href="actualites.html">Actualités</a><a href="commerce.html">Commerces</a><a class="active" href="Prof.html">Annuaire</a><a class="nav-cta" href="form.html">Nous écrire</a></nav></header><main><section class="page-hero"><div class="wrap"><span class="eyebrow">Des compétences à proximité</span><h1>Le bon professionnel, près de vous.</h1><p>Parcourez un annuaire clair de professionnels locaux et repérez facilement les profils certifiés par Berceau Communautaire.</p></div></section><section class="wrap section"><div class="toolbar"><label class="field"><i class="fa-solid fa-magnifying-glass"></i><input id="listing-search" placeholder="Nom, métier ou spécialité..."></label><label class="field"><select id="category-filter"></select></label><label class="field"><select id="location-filter"></select></label><button id="reset-filters" class="btn secondary">Réinitialiser</button></div><div class="result-row"><strong id="result-count"></strong><span class="meta"><i class="fa-solid fa-circle-check"></i> Profils certifiés identifiés</span></div><div id="listing-grid" class="pro-grid"></div></section></main><footer><div class="footer-bottom wrap">© 2026 Berceau Communautaire · Kinshasa, RDC</div></footer><script src="data.js"></script><script src="app.js"></script></body></html>
++<!doctype html>
++<html lang="fr">
++    <head>
++        <meta charset="UTF-8">
++        <meta name="viewport" content="width=device-width,initial-scale=1">
++        <title>Annuaire — Berceau Communautaire</title>
++        <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
++        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
++        <link rel="stylesheet" href="style.css">
++    </head>
++    <body data-page="directory">
++        <!-- Navigation -->
++        <header class="site-header">
++            <a class="brand" href="index.html">
++                <span class="brand-mark">BC</span>
++                <span>
++                    Berceau
++                    <b>Communautaire</b>
++                </span>
++            </a>
++            <button class="nav-toggle" aria-label="Menu">
++                <i class="fa-solid fa-bars"></i>
++            </button>
++            <nav class="main-nav">
++                <a href="index.html">Accueil</a>
++                <a href="actualites.html">Actualités</a>
++                <a href="commerce.html">Commerces</a>
++                <a class="active" href="Prof.html">Annuaire</a>
++                <a class="nav-cta" href="form.html">Nous écrire</a>
++            </nav>
++        </header>
++        <!-- Contenu principal -->
++        <main>
++            <section class="page-hero">
++                <div class="wrap">
++                    <span class="eyebrow">Des compétences à proximité</span>
++                    <h1>Le bon professionnel, près de vous.</h1>
++                    <p>Parcourez un annuaire clair de professionnels locaux et repérez facilement les profils certifiés par Berceau Communautaire.</p>
++                </div>
++            </section>
++            <section class="wrap section">
++                <div class="toolbar">
++                    <label class="field">
++                        <i class="fa-solid fa-magnifying-glass"></i>
++                        <input id="listing-search" placeholder="Nom, métier ou spécialité...">
++                    </label>
++                    <label class="field">
++                        <select id="category-filter"></select>
++                    </label>
++                    <label class="field">
++                        <select id="location-filter"></select>
++                    </label>
++                    <button id="reset-filters" class="btn secondary">Réinitialiser</button>
++                </div>
++                <div class="result-row">
++                    <strong id="result-count"></strong>
++                    <span class="meta">
++                        <i class="fa-solid fa-circle-check"></i>
++                        Profils certifiés identifiés
++                    </span>
++                </div>
++                <div id="listing-grid" class="pro-grid"></div>
++            </section>
++        </main>
++        <!-- Pied de page -->
++        <footer>
++            <div class="footer-bottom wrap">© 2026 Berceau Communautaire · Kinshasa, RDC</div>
++        </footer>
++        <script src="data.js"></script>
++        <script src="app.js"></script>
++    </body>
++</html>
+diff --git a/actualites.html b/actualites.html
+index da0ff70..1445173 100644
+--- a/actualites.html
++++ b/actualites.html
+@@ -1 +1,53 @@
+-<!doctype html><html lang="fr"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Actualités — Berceau Communautaire</title><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"><link rel="stylesheet" href="style.css"></head><body data-page="news"><header class="site-header"><a class="brand" href="index.html"><span class="brand-mark">BC</span><span>Berceau <b>Communautaire</b></span></a><button class="nav-toggle" aria-label="Menu"><i class="fa-solid fa-bars"></i></button><nav class="main-nav"><a href="index.html">Accueil</a><a class="active" href="actualites.html">Actualités</a><a href="commerce.html">Commerces</a><a href="Prof.html">Annuaire</a><a class="nav-cta" href="form.html">Nous écrire</a></nav></header><main><section class="page-hero"><div class="wrap"><span class="eyebrow">Le journal communautaire</span><h1>L’actualité qui nous rassemble.</h1><p>Informations utiles, initiatives locales et événements : restez au rythme de votre quartier.</p></div></section><section class="section wrap"><div id="news-filters" class="filter-chips"></div><div id="news-grid" class="editorial-grid"></div></section></main><footer><div class="footer-bottom wrap">© 2026 Berceau Communautaire · Kinshasa, RDC</div></footer><script src="data.js"></script><script src="app.js"></script></body></html>
++<!doctype html>
++<html lang="fr">
++    <head>
++        <meta charset="UTF-8">
++        <meta name="viewport" content="width=device-width,initial-scale=1">
++        <title>Actualités — Berceau Communautaire</title>
++        <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
++        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
++        <link rel="stylesheet" href="style.css">
++    </head>
++    <body data-page="news">
++        <!-- Navigation -->
++        <header class="site-header">
++            <a class="brand" href="index.html">
++                <span class="brand-mark">BC</span>
++                <span>
++                    Berceau
++                    <b>Communautaire</b>
++                </span>
++            </a>
++            <button class="nav-toggle" aria-label="Menu">
++                <i class="fa-solid fa-bars"></i>
++            </button>
++            <nav class="main-nav">
++                <a href="index.html">Accueil</a>
++                <a class="active" href="actualites.html">Actualités</a>
++                <a href="commerce.html">Commerces</a>
++                <a href="Prof.html">Annuaire</a>
++                <a class="nav-cta" href="form.html">Nous écrire</a>
++            </nav>
++        </header>
++        <!-- Contenu principal -->
++        <main>
++            <section class="page-hero">
++                <div class="wrap">
++                    <span class="eyebrow">Le journal communautaire</span>
++                    <h1>L’actualité qui nous rassemble.</h1>
++                    <p>Informations utiles, initiatives locales et événements : restez au rythme de votre quartier.</p>
++                </div>
++            </section>
++            <section class="section wrap">
++                <div id="news-filters" class="filter-chips"></div>
++                <div id="news-grid" class="editorial-grid"></div>
++            </section>
++        </main>
++        <!-- Pied de page -->
++        <footer>
++            <div class="footer-bottom wrap">© 2026 Berceau Communautaire · Kinshasa, RDC</div>
++        </footer>
++        <script src="data.js"></script>
++        <script src="app.js"></script>
++    </body>
++</html>
+diff --git a/admin.css b/admin.css
+index 9c4737e..fa03088 100644
+--- a/admin.css
++++ b/admin.css
+@@ -1 +1,258 @@
+-.admin-body{background:#f2f4f1}.admin-sidebar{position:fixed;inset:0 auto 0 0;width:260px;background:#0d1d30;color:#cbd5df;padding:24px 18px;display:flex;flex-direction:column;z-index:80}.admin-brand{color:#fff;margin:0 6px 35px}.admin-sidebar nav{display:flex;flex-direction:column;gap:6px}.admin-sidebar nav button{border:0;background:transparent;color:#aebbc8;text-align:left;padding:13px 14px;border-radius:10px;font-size:13px}.admin-sidebar nav button i{width:24px}.admin-sidebar nav button:hover,.admin-sidebar nav button.active{background:#ffffff14;color:#fff}.back-site{margin-top:auto;padding:13px;font-size:13px;border-top:1px solid #ffffff17}.admin-main{margin-left:260px;padding:0 36px 60px;max-width:1500px}.admin-top{height:100px;display:flex;align-items:center;gap:20px}.admin-top h1{font-size:27px;margin:0}.admin-top #admin-menu{display:none;border:0;background:#fff;width:42px;height:42px;border-radius:10px}.admin-avatar{margin-left:auto;width:42px;height:42px;border-radius:50%;background:var(--gold);display:grid;place-items:center;color:#fff;font-weight:800}.admin-warning{margin:0 0 28px}.stat-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}.stat-card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:20px}.stat-card i{color:var(--gold)}.stat-card strong{display:block;font-size:30px;margin-top:14px}.stat-card span{font-size:12px;color:var(--muted)}.admin-panel{background:#fff;border:1px solid var(--line);border-radius:18px;margin-top:22px;overflow:hidden}.panel-head{padding:18px 20px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}.panel-head h2{font-size:18px;margin:0}.admin-table{width:100%;border-collapse:collapse}.admin-table th,.admin-table td{text-align:left;padding:14px 20px;border-bottom:1px solid var(--line);font-size:12px}.admin-table th{color:var(--muted);font-size:10px;text-transform:uppercase;letter-spacing:.08em}.row-actions{display:flex;gap:6px}.icon-btn{width:34px;height:34px;border:1px solid var(--line);background:#fff;border-radius:8px}.icon-btn.danger{color:var(--red)}.admin-search{border:1px solid var(--line);border-radius:10px;padding:10px;width:240px}.switch{display:inline-flex;align-items:center;gap:8px}.switch input{accent-color:var(--green)}.admin-form h2{margin-top:0}.admin-form .btn{width:100%}@media(max-width:1050px){.stat-grid{grid-template-columns:repeat(2,1fr)}}@media(max-width:760px){.admin-sidebar{transform:translateX(-100%);transition:.2s}.admin-sidebar.open{transform:none}.admin-main{margin-left:0;padding:0 14px 40px}.admin-top #admin-menu{display:block}.stat-grid{grid-template-columns:1fr 1fr}.admin-panel{overflow:auto}.admin-table{min-width:680px}.admin-warning{font-size:11px}}@media(max-width:430px){.stat-grid{grid-template-columns:1fr}}
++/* Structure de l’administration */
++.admin-body {
++    background: #f2f4f1
++}
++
++.admin-sidebar {
++    position: fixed;
++    inset: 0 auto 0 0;
++    width: 260px;
++    background: #0d1d30;
++    color: #cbd5df;
++    padding: 24px 18px;
++    display: flex;
++    flex-direction: column;
++    z-index: 80
++}
++
++.admin-brand {
++    color: #fff;
++    margin: 0 6px 35px
++}
++
++.admin-sidebar nav {
++    display: flex;
++    flex-direction: column;
++    gap: 6px
++}
++
++.admin-sidebar nav button {
++    border: 0;
++    background: transparent;
++    color: #aebbc8;
++    text-align: left;
++    padding: 13px 14px;
++    border-radius: 10px;
++    font-size: 13px
++}
++
++.admin-sidebar nav button i {
++    width: 24px
++}
++
++.admin-sidebar nav button:hover,
++.admin-sidebar nav button.active {
++    background: #ffffff14;
++    color: #fff
++}
++
++.back-site {
++    margin-top: auto;
++    padding: 13px;
++    font-size: 13px;
++    border-top: 1px solid #ffffff17
++}
++
++.admin-main {
++    margin-left: 260px;
++    padding: 0 36px 60px;
++    max-width: 1500px
++}
++
++.admin-top {
++    height: 100px;
++    display: flex;
++    align-items: center;
++    gap: 20px
++}
++
++.admin-top h1 {
++    font-size: 27px;
++    margin: 0
++}
++
++.admin-top #admin-menu {
++    display: none;
++    border: 0;
++    background: #fff;
++    width: 42px;
++    height: 42px;
++    border-radius: 10px
++}
++
++.admin-avatar {
++    margin-left: auto;
++    width: 42px;
++    height: 42px;
++    border-radius: 50%;
++    background: var(--gold);
++    display: grid;
++    place-items: center;
++    color: #fff;
++    font-weight: 800
++}
++
++.admin-warning {
++    margin: 0 0 28px
++}
++
++/* Indicateurs et tableaux de gestion */
++.stat-grid {
++    display: grid;
++    grid-template-columns: repeat(5,1fr);
++    gap: 14px
++}
++
++.stat-card {
++    background: #fff;
++    border: 1px solid var(--line);
++    border-radius: 16px;
++    padding: 20px
++}
++
++.stat-card i {
++    color: var(--gold)
++}
++
++.stat-card strong {
++    display: block;
++    font-size: 30px;
++    margin-top: 14px
++}
++
++.stat-card span {
++    font-size: 12px;
++    color: var(--muted)
++}
++
++.admin-panel {
++    background: #fff;
++    border: 1px solid var(--line);
++    border-radius: 18px;
++    margin-top: 22px;
++    overflow: hidden
++}
++
++.panel-head {
++    padding: 18px 20px;
++    display: flex;
++    align-items: center;
++    justify-content: space-between;
++    border-bottom: 1px solid var(--line)
++}
++
++.panel-head h2 {
++    font-size: 18px;
++    margin: 0
++}
++
++.admin-table {
++    width: 100%;
++    border-collapse: collapse
++}
++
++.admin-table th,
++.admin-table td {
++    text-align: left;
++    padding: 14px 20px;
++    border-bottom: 1px solid var(--line);
++    font-size: 12px
++}
++
++.admin-table th {
++    color: var(--muted);
++    font-size: 10px;
++    text-transform: uppercase;
++    letter-spacing: .08em
++}
++
++.row-actions {
++    display: flex;
++    gap: 6px
++}
++
++.icon-btn {
++    width: 34px;
++    height: 34px;
++    border: 1px solid var(--line);
++    background: #fff;
++    border-radius: 8px
++}
++
++.icon-btn.danger {
++    color: var(--red)
++}
++
++.admin-search {
++    border: 1px solid var(--line);
++    border-radius: 10px;
++    padding: 10px;
++    width: 240px
++}
++
++.switch {
++    display: inline-flex;
++    align-items: center;
++    gap: 8px
++}
++
++.switch input {
++    accent-color: var(--green)
++}
++
++.admin-form h2 {
++    margin-top: 0
++}
++
++.admin-form .btn {
++    width: 100%
++}
++
++/* Adaptation responsive */
++@media(max-width:1050px) {
++    .stat-grid {
++        grid-template-columns: repeat(2,1fr)
++    }
++}
++
++@media(max-width:760px) {
++    .admin-sidebar {
++        transform: translateX(-100%);
++        transition: .2s
++    }
++
++    .admin-sidebar.open {
++        transform: none
++    }
++
++    .admin-main {
++        margin-left: 0;
++        padding: 0 14px 40px
++    }
++
++    .admin-top #admin-menu {
++        display: block
++    }
++
++    .stat-grid {
++        grid-template-columns: 1fr 1fr
++    }
++
++    .admin-panel {
++        overflow: auto
++    }
++
++    .admin-table {
++        min-width: 680px
++    }
++
++    .admin-warning {
++        font-size: 11px
++    }
++}
++
++@media(max-width:430px) {
++    .stat-grid {
++        grid-template-columns: 1fr
++    }
++}
+diff --git a/admin.html b/admin.html
+index c6b17d7..67439d2 100644
+--- a/admin.html
++++ b/admin.html
+@@ -1 +1,78 @@
+-<!doctype html><html lang="fr"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Administration — Berceau Communautaire</title><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"><link rel="stylesheet" href="style.css"><link rel="stylesheet" href="admin.css"></head><body class="admin-body"><aside class="admin-sidebar"><a class="brand admin-brand" href="index.html"><span class="brand-mark">BC</span><span>Berceau <b>Administration</b></span></a><nav><button class="active" data-view="dashboard"><i class="fa-solid fa-chart-pie"></i> Tableau de bord</button><button data-view="news"><i class="fa-regular fa-newspaper"></i> Actualités</button><button data-view="professionals"><i class="fa-solid fa-user-group"></i> Professionnels</button><button data-view="commerces"><i class="fa-solid fa-store"></i> Commerces</button><button data-view="certifications"><i class="fa-solid fa-certificate"></i> Certifications</button></nav><a class="back-site" href="index.html"><i class="fa-solid fa-arrow-left"></i> Retour au site</a></aside><main class="admin-main"><header class="admin-top"><button id="admin-menu" aria-label="Menu"><i class="fa-solid fa-bars"></i></button><div><span class="meta">ESPACE DE GESTION</span><h1 id="view-title">Tableau de bord</h1></div><div class="admin-avatar">AD</div></header><div class="notice admin-warning"><b>Prototype local :</b> aucune authentification sécurisée n’est configurée. Protégez cette route avec un backend et une gestion de sessions avant toute mise en production.</div><section id="admin-view"></section></main><div id="admin-modal" class="modal"><div class="modal-card"><button class="modal-close" aria-label="Fermer"><i class="fa-solid fa-xmark"></i></button><div class="modal-content"></div></div></div><script src="data.js"></script><script src="admin.js"></script></body></html>
++<!doctype html>
++<html lang="fr">
++    <head>
++        <meta charset="UTF-8">
++        <meta name="viewport" content="width=device-width,initial-scale=1">
++        <title>Administration — Berceau Communautaire</title>
++        <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
++        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
++        <link rel="stylesheet" href="style.css">
++        <link rel="stylesheet" href="admin.css">
++    </head>
++    <body class="admin-body">
++        <!-- Navigation de l’administration -->
++        <aside class="admin-sidebar">
++            <a class="brand admin-brand" href="index.html">
++                <span class="brand-mark">BC</span>
++                <span>
++                    Berceau
++                    <b>Administration</b>
++                </span>
++            </a>
++            <nav>
++                <button class="active" data-view="dashboard">
++                    <i class="fa-solid fa-chart-pie"></i>
++                    Tableau de bord
++                </button>
++                <button data-view="news">
++                    <i class="fa-regular fa-newspaper"></i>
++                    Actualités
++                </button>
++                <button data-view="professionals">
++                    <i class="fa-solid fa-user-group"></i>
++                    Professionnels
++                </button>
++                <button data-view="commerces">
++                    <i class="fa-solid fa-store"></i>
++                    Commerces
++                </button>
++                <button data-view="certifications">
++                    <i class="fa-solid fa-certificate"></i>
++                    Certifications
++                </button>
++            </nav>
++            <a class="back-site" href="index.html">
++                <i class="fa-solid fa-arrow-left"></i>
++                Retour au site
++            </a>
++        </aside>
++        <!-- Espace de gestion -->
++        <main class="admin-main">
++            <header class="admin-top">
++                <button id="admin-menu" aria-label="Menu">
++                    <i class="fa-solid fa-bars"></i>
++                </button>
++                <div>
++                    <span class="meta">ESPACE DE GESTION</span>
++                    <h1 id="view-title">Tableau de bord</h1>
++                </div>
++                <div class="admin-avatar">AD</div>
++            </header>
++            <div class="notice admin-warning">
++                <b>Prototype local :</b>
++                aucune authentification sécurisée n’est configurée. Protégez cette route avec un backend et une gestion de sessions avant toute mise en production.
++            </div>
++            <section id="admin-view"></section>
++        </main>
++        <div id="admin-modal" class="modal">
++            <div class="modal-card">
++                <button class="modal-close" aria-label="Fermer">
++                    <i class="fa-solid fa-xmark"></i>
++                </button>
++                <div class="modal-content"></div>
++            </div>
++        </div>
++        <script src="data.js"></script>
++        <script src="admin.js"></script>
++    </body>
++</html>
+diff --git a/article.html b/article.html
+index 2801348..f29280d 100644
+--- a/article.html
++++ b/article.html
+@@ -1 +1,49 @@
+-<!doctype html><html lang="fr"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Article — Berceau Communautaire</title><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"><link rel="stylesheet" href="style.css"></head><body data-page="article"><header class="site-header"><a class="brand" href="index.html"><span class="brand-mark">BC</span><span>Berceau <b>Communautaire</b></span></a><button class="nav-toggle" aria-label="Menu"><i class="fa-solid fa-bars"></i></button><nav class="main-nav"><a href="index.html">Accueil</a><a class="active" href="actualites.html">Actualités</a><a href="commerce.html">Commerces</a><a href="Prof.html">Annuaire</a></nav></header><main class="wrap article-layout"><article id="article-content" class="article-main"></article><aside class="article-aside"><div class="aside-card"><span class="eyebrow">À lire aussi</span><div id="related-news"></div><a class="text-link" href="actualites.html">Toutes les actualités →</a></div></aside></main><footer><div class="footer-bottom wrap">© 2026 Berceau Communautaire</div></footer><script src="data.js"></script><script src="app.js"></script></body></html>
++<!doctype html>
++<html lang="fr">
++    <head>
++        <meta charset="UTF-8">
++        <meta name="viewport" content="width=device-width,initial-scale=1">
++        <title>Article — Berceau Communautaire</title>
++        <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
++        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
++        <link rel="stylesheet" href="style.css">
++    </head>
++    <body data-page="article">
++        <!-- Navigation -->
++        <header class="site-header">
++            <a class="brand" href="index.html">
++                <span class="brand-mark">BC</span>
++                <span>
++                    Berceau
++                    <b>Communautaire</b>
++                </span>
++            </a>
++            <button class="nav-toggle" aria-label="Menu">
++                <i class="fa-solid fa-bars"></i>
++            </button>
++            <nav class="main-nav">
++                <a href="index.html">Accueil</a>
++                <a class="active" href="actualites.html">Actualités</a>
++                <a href="commerce.html">Commerces</a>
++                <a href="Prof.html">Annuaire</a>
++            </nav>
++        </header>
++        <!-- Contenu principal -->
++        <main class="wrap article-layout">
++            <article id="article-content" class="article-main"></article>
++            <aside class="article-aside">
++                <div class="aside-card">
++                    <span class="eyebrow">À lire aussi</span>
++                    <div id="related-news"></div>
++                    <a class="text-link" href="actualites.html">Toutes les actualités →</a>
++                </div>
++            </aside>
++        </main>
++        <!-- Pied de page -->
++        <footer>
++            <div class="footer-bottom wrap">© 2026 Berceau Communautaire</div>
++        </footer>
++        <script src="data.js"></script>
++        <script src="app.js"></script>
++    </body>
++</html>
+diff --git a/commerce.html b/commerce.html
+index fb18326..12dc14c 100644
+--- a/commerce.html
++++ b/commerce.html
+@@ -1 +1,69 @@
+-<!doctype html><html lang="fr"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Commerces — Berceau Communautaire</title><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"><link rel="stylesheet" href="style.css"></head><body data-page="shops"><header class="site-header"><a class="brand" href="index.html"><span class="brand-mark">BC</span><span>Berceau <b>Communautaire</b></span></a><button class="nav-toggle" aria-label="Menu"><i class="fa-solid fa-bars"></i></button><nav class="main-nav"><a href="index.html">Accueil</a><a href="actualites.html">Actualités</a><a class="active" href="commerce.html">Commerces</a><a href="Prof.html">Annuaire</a><a class="nav-cta" href="form.html">Nous écrire</a></nav></header><main><section class="page-hero"><div class="wrap"><span class="eyebrow">Le marché local</span><h1>Découvrez les commerces d’ici.</h1><p>Restaurants, boutiques et services : trouvez les bonnes adresses qui font battre le cœur du quartier.</p></div></section><section class="wrap section"><div class="toolbar"><label class="field"><i class="fa-solid fa-magnifying-glass"></i><input id="listing-search" placeholder="Rechercher un commerce..."></label><label class="field"><select id="category-filter"></select></label><label class="field"><select id="location-filter"></select></label><button id="reset-filters" class="btn secondary">Réinitialiser</button></div><div class="result-row"><strong id="result-count"></strong><span class="meta">Vitrine locale · pas de vente en ligne</span></div><div id="listing-grid" class="shop-grid"></div></section></main><footer><div class="footer-bottom wrap">© 2026 Berceau Communautaire · Kinshasa, RDC</div></footer><script src="data.js"></script><script src="app.js"></script></body></html>
++<!doctype html>
++<html lang="fr">
++    <head>
++        <meta charset="UTF-8">
++        <meta name="viewport" content="width=device-width,initial-scale=1">
++        <title>Commerces — Berceau Communautaire</title>
++        <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
++        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
++        <link rel="stylesheet" href="style.css">
++    </head>
++    <body data-page="shops">
++        <!-- Navigation -->
++        <header class="site-header">
++            <a class="brand" href="index.html">
++                <span class="brand-mark">BC</span>
++                <span>
++                    Berceau
++                    <b>Communautaire</b>
++                </span>
++            </a>
++            <button class="nav-toggle" aria-label="Menu">
++                <i class="fa-solid fa-bars"></i>
++            </button>
++            <nav class="main-nav">
++                <a href="index.html">Accueil</a>
++                <a href="actualites.html">Actualités</a>
++                <a class="active" href="commerce.html">Commerces</a>
++                <a href="Prof.html">Annuaire</a>
++                <a class="nav-cta" href="form.html">Nous écrire</a>
++            </nav>
++        </header>
++        <!-- Contenu principal -->
++        <main>
++            <section class="page-hero">
++                <div class="wrap">
++                    <span class="eyebrow">Le marché local</span>
++                    <h1>Découvrez les commerces d’ici.</h1>
++                    <p>Restaurants, boutiques et services : trouvez les bonnes adresses qui font battre le cœur du quartier.</p>
++                </div>
++            </section>
++            <section class="wrap section">
++                <div class="toolbar">
++                    <label class="field">
++                        <i class="fa-solid fa-magnifying-glass"></i>
++                        <input id="listing-search" placeholder="Rechercher un commerce...">
++                    </label>
++                    <label class="field">
++                        <select id="category-filter"></select>
++                    </label>
++                    <label class="field">
++                        <select id="location-filter"></select>
++                    </label>
++                    <button id="reset-filters" class="btn secondary">Réinitialiser</button>
++                </div>
++                <div class="result-row">
++                    <strong id="result-count"></strong>
++                    <span class="meta">Vitrine locale · pas de vente en ligne</span>
++                </div>
++                <div id="listing-grid" class="shop-grid"></div>
++            </section>
++        </main>
++        <!-- Pied de page -->
++        <footer>
++            <div class="footer-bottom wrap">© 2026 Berceau Communautaire · Kinshasa, RDC</div>
++        </footer>
++        <script src="data.js"></script>
++        <script src="app.js"></script>
++    </body>
++</html>
+diff --git a/form.html b/form.html
+index 30006e0..f553edc 100644
+--- a/form.html
++++ b/form.html
+@@ -1 +1,56 @@
+-<!doctype html><html lang="fr"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Nous écrire — Berceau Communautaire</title><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css"></head><body><header class="site-header"><a class="brand" href="index.html"><span class="brand-mark">BC</span><span>Berceau <b>Communautaire</b></span></a><nav class="main-nav"><a href="index.html">Retour à l’accueil</a></nav></header><main><section class="page-hero"><div class="wrap"><span class="eyebrow">Votre voix compte</span><h1>Parlons de votre quartier.</h1><p>Une remarque, une information utile ou une idée ? Écrivez-nous.</p></div></section><form class="feedback" id="avisForm"><div class="form-grid"><div><label for="nom">Nom</label><input id="nom" required></div><div><label for="email">E-mail</label><input id="email" type="email"></div><div class="full"><label for="message">Message</label><textarea id="message" required></textarea></div><div class="full"><button class="btn primary" type="submit">Envoyer le message</button></div></div><p id="resultat" class="notice" hidden></p></form></main><script>document.querySelector('#avisForm').onsubmit=e=>{e.preventDefault();const r=document.querySelector('#resultat');r.hidden=false;r.textContent='Merci ! Votre message a bien été préparé pour traitement.';e.target.reset()}</script></body></html>
++<!doctype html>
++<html lang="fr">
++    <head>
++        <meta charset="UTF-8">
++        <meta name="viewport" content="width=device-width,initial-scale=1">
++        <title>Nous écrire — Berceau Communautaire</title>
++        <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
++        <link rel="stylesheet" href="style.css">
++    </head>
++    <body>
++        <!-- Navigation -->
++        <header class="site-header">
++            <a class="brand" href="index.html">
++                <span class="brand-mark">BC</span>
++                <span>
++                    Berceau
++                    <b>Communautaire</b>
++                </span>
++            </a>
++            <nav class="main-nav">
++                <a href="index.html">Retour à l’accueil</a>
++            </nav>
++        </header>
++        <!-- Contenu principal -->
++        <main>
++            <section class="page-hero">
++                <div class="wrap">
++                    <span class="eyebrow">Votre voix compte</span>
++                    <h1>Parlons de votre quartier.</h1>
++                    <p>Une remarque, une information utile ou une idée ? Écrivez-nous.</p>
++                </div>
++            </section>
++            <form class="feedback" id="avisForm">
++                <div class="form-grid">
++                    <div>
++                        <label for="nom">Nom</label>
++                        <input id="nom" required>
++                    </div>
++                    <div>
++                        <label for="email">E-mail</label>
++                        <input id="email" type="email">
++                    </div>
++                    <div class="full">
++                        <label for="message">Message</label>
++                        <textarea id="message" required></textarea>
++                    </div>
++                    <div class="full">
++                        <button class="btn primary" type="submit">Envoyer le message</button>
++                    </div>
++                </div>
++                <p id="resultat" class="notice" hidden></p>
++            </form>
++        </main>
++        <script>document.querySelector('#avisForm').onsubmit=e=>{e.preventDefault();const r=document.querySelector('#resultat');r.hidden=false;r.textContent='Merci ! Votre message a bien été préparé pour traitement.';e.target.reset()}</script>
++    </body>
++</html>
+diff --git a/index.html b/index.html
+index b50df60..2085f5b 100644
+--- a/index.html
++++ b/index.html
+@@ -1,98 +1,176 @@
+ <!doctype html>
+ <html lang="fr">
+-
+-<head>
+-    <meta charset="UTF-8">
+-    <meta name="viewport" content="width=device-width,initial-scale=1">
+-    <meta name="description" content="Berceau Communautaire connecte, informe et valorise les communautés locales.">
+-    <title>Berceau Communautaire — La plateforme de votre quartier</title>
+-    <link rel="preconnect" href="https://fonts.googleapis.com">
+-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+-        rel="stylesheet">
+-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+-    <link rel="stylesheet" href="style.css">
+-</head>
+-
+-<body data-page="home">
+-    <header class="site-header"><a class="brand" href="index.html"><span class="brand-mark">BC</span><span>Berceau
+-                <b>Communautaire</b></span></a><button class="nav-toggle" aria-label="Ouvrir le menu"
+-            aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
+-        <nav class="main-nav"><a class="active" href="index.html">Accueil</a><a href="actualites.html">Actualités</a><a
+-                href="commerce.html">Commerces</a><a href="Prof.html">Annuaire</a><a class="nav-cta"
+-                href="form.html">Nous écrire</a></nav>
+-    </header>
+-    <main>
+-        <section class="home-hero">
+-            <div class="hero-copy"><span class="eyebrow"><i class="fa-solid fa-location-dot"></i> Votre quartier, plus
+-                    proche</span>
+-                <h1>La communauté locale, <em>à portée de main.</em></h1>
+-                <p>Berceau Communautaire connecte les habitants, informe sur la vie du quartier et met en lumière les
+-                    professionnels et commerces qui le font vivre.</p>
+-                <div class="hero-actions"><a class="btn primary" href="actualites.html">Explorer l’actualité</a><a
+-                        class="btn secondary" href="Prof.html">Trouver un professionnel</a></div>
+-                <div class="trust-row"><span><i class="fa-solid fa-circle-check"></i> Acteurs vérifiés</span><span><i
+-                            class="fa-solid fa-heart"></i> Initiative locale</span></div>
+-            </div>
+-            <div class="hero-panel">
+-                <div class="community-visual"><span class="visual-label">Aujourd’hui dans le quartier</span>
+-                    <div class="pulse-card"><i class="fa-solid fa-bolt"></i>
+-                        <div><b>Information importante</b><small>Retour du courant prévu à 18h</small></div>
++    <head>
++        <meta charset="UTF-8">
++        <meta name="viewport" content="width=device-width,initial-scale=1">
++        <meta name="description" content="Berceau Communautaire connecte, informe et valorise les communautés locales.">
++        <title>Berceau Communautaire — La plateforme de votre quartier</title>
++        <link rel="preconnect" href="https://fonts.googleapis.com">
++        <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
++        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
++        <link rel="stylesheet" href="style.css">
++    </head>
++    <body data-page="home">
++        <!-- Navigation -->
++        <header class="site-header">
++            <a class="brand" href="index.html">
++                <span class="brand-mark">BC</span>
++                <span>
++                    Berceau
++                    <b>Communautaire</b>
++                </span>
++            </a>
++            <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
++                <i class="fa-solid fa-bars"></i>
++            </button>
++            <nav class="main-nav">
++                <a class="active" href="index.html">Accueil</a>
++                <a href="actualites.html">Actualités</a>
++                <a href="commerce.html">Commerces</a>
++                <a href="Prof.html">Annuaire</a>
++                <a class="nav-cta" href="form.html">Nous écrire</a>
++            </nav>
++        </header>
++        <!-- Contenu principal -->
++        <main>
++            <section class="home-hero">
++                <div class="hero-copy">
++                    <span class="eyebrow">
++                        <i class="fa-solid fa-location-dot"></i>
++                        Votre quartier, plus proche
++                    </span>
++                    <h1>
++                        La communauté locale,
++                        <em>à portée de main.</em>
++                    </h1>
++                    <p>Berceau Communautaire connecte les habitants, informe sur la vie du quartier et met en lumière les professionnels et commerces qui le font vivre.</p>
++                    <div class="hero-actions">
++                        <a class="btn primary" href="actualites.html">Explorer l’actualité</a>
++                        <a class="btn secondary" href="Prof.html">Trouver un professionnel</a>
+                     </div>
+-                    <div class="pulse-grid">
+-                        <div><strong data-count="professionals">5</strong><span>Professionnels</span></div>
+-                        <div><strong data-count="commerces">5</strong><span>Commerces</span></div>
++                    <div class="trust-row">
++                        <span>
++                            <i class="fa-solid fa-circle-check"></i>
++                            Acteurs vérifiés
++                        </span>
++                        <span>
++                            <i class="fa-solid fa-heart"></i>
++                            Initiative locale
++                        </span>
+                     </div>
+                 </div>
+-            </div>
+-        </section>
+-        <section class="quick-links wrap"><a href="actualites.html"><span><i class="fa-regular fa-newspaper"></i></span>
+-                <div><b>Les actualités</b><small>Comprendre ce qui se passe</small></div><i
+-                    class="fa-solid fa-arrow-right"></i>
+-            </a><a href="commerce.html"><span><i class="fa-solid fa-store"></i></span>
+-                <div><b>Commerces locaux</b><small>Découvrir les bonnes adresses</small></div><i
+-                    class="fa-solid fa-arrow-right"></i>
+-            </a><a href="Prof.html"><span><i class="fa-solid fa-user-group"></i></span>
+-                <div><b>Annuaire</b><small>Trouver le bon professionnel</small></div><i
+-                    class="fa-solid fa-arrow-right"></i>
+-            </a></section>
+-        <section class="section wrap">
+-            <div class="section-head">
+-                <div><span class="eyebrow">Le journal du quartier</span>
+-                    <h2>L’essentiel, près de chez vous</h2>
+-                </div><a class="text-link" href="actualites.html">Toutes les actualités <i
+-                        class="fa-solid fa-arrow-right"></i></a>
+-            </div>
+-            <div id="home-news" class="editorial-grid"></div>
+-        </section>
+-        <section class="section tinted">
+-            <div class="wrap">
++                <div class="hero-panel">
++                    <div class="community-visual">
++                        <span class="visual-label">Aujourd’hui dans le quartier</span>
++                        <div class="pulse-card">
++                            <i class="fa-solid fa-bolt"></i>
++                            <div>
++                                <b>Information importante</b>
++                                <small>Retour du courant prévu à 18h</small>
++                            </div>
++                        </div>
++                        <div class="pulse-grid">
++                            <div>
++                                <strong data-count="professionals">5</strong>
++                                <span>Professionnels</span>
++                            </div>
++                            <div>
++                                <strong data-count="commerces">5</strong>
++                                <span>Commerces</span>
++                            </div>
++                        </div>
++                    </div>
++                </div>
++            </section>
++            <section class="quick-links wrap">
++                <a href="actualites.html">
++                    <span>
++                        <i class="fa-regular fa-newspaper"></i>
++                    </span>
++                    <div>
++                        <b>Les actualités</b>
++                        <small>Comprendre ce qui se passe</small>
++                    </div>
++                    <i class="fa-solid fa-arrow-right"></i>
++                </a>
++                <a href="commerce.html">
++                    <span>
++                        <i class="fa-solid fa-store"></i>
++                    </span>
++                    <div>
++                        <b>Commerces locaux</b>
++                        <small>Découvrir les bonnes adresses</small>
++                    </div>
++                    <i class="fa-solid fa-arrow-right"></i>
++                </a>
++                <a href="Prof.html">
++                    <span>
++                        <i class="fa-solid fa-user-group"></i>
++                    </span>
++                    <div>
++                        <b>Annuaire</b>
++                        <small>Trouver le bon professionnel</small>
++                    </div>
++                    <i class="fa-solid fa-arrow-right"></i>
++                </a>
++            </section>
++            <section class="section wrap">
+                 <div class="section-head">
+-                    <div><span class="eyebrow">Faire vivre le quartier</span>
+-                        <h2>Des adresses à découvrir</h2>
+-                    </div><a class="text-link" href="commerce.html">Voir les commerces <i
+-                            class="fa-solid fa-arrow-right"></i></a>
++                    <div>
++                        <span class="eyebrow">Le journal du quartier</span>
++                        <h2>L’essentiel, près de chez vous</h2>
++                    </div>
++                    <a class="text-link" href="actualites.html">
++                        Toutes les actualités
++                        <i class="fa-solid fa-arrow-right"></i>
++                    </a>
++                </div>
++                <div id="home-news" class="editorial-grid"></div>
++            </section>
++            <section class="section tinted">
++                <div class="wrap">
++                    <div class="section-head">
++                        <div>
++                            <span class="eyebrow">Faire vivre le quartier</span>
++                            <h2>Des adresses à découvrir</h2>
++                        </div>
++                        <a class="text-link" href="commerce.html">
++                            Voir les commerces
++                            <i class="fa-solid fa-arrow-right"></i>
++                        </a>
++                    </div>
++                    <div id="home-shops" class="shop-grid"></div>
++                </div>
++            </section>
++            <section class="community-cta wrap">
++                <div>
++                    <span class="eyebrow light">Une communauté solidaire</span>
++                    <h2>Besoin d’un coup de main ?</h2>
++                    <p>Consultez l’annuaire des professionnels de proximité, vérifiés et prêts à vous accompagner.</p>
++                </div>
++                <a class="btn light" href="Prof.html">Ouvrir l’annuaire</a>
++            </section>
++        </main>
++        <!-- Pied de page -->
++        <footer>
++            <div class="wrap footer-inner">
++                <a class="brand light-brand" href="index.html">
++                    <span class="brand-mark">BC</span>
++                    <span>
++                        Berceau
++                        <b>Communautaire</b>
++                    </span>
++                </a>
++                <p>La plateforme numérique de votre quartier.</p>
++                <div>
++                    <a href="actualites.html">Actualités</a>
++                    <a href="commerce.html">Commerces</a>
++                    <a href="Prof.html">Annuaire</a>
+                 </div>
+-                <div id="home-shops" class="shop-grid"></div>
+             </div>
+-        </section>
+-        <section class="community-cta wrap">
+-            <div><span class="eyebrow light">Une communauté solidaire</span>
+-                <h2>Besoin d’un coup de main ?</h2>
+-                <p>Consultez l’annuaire des professionnels de proximité, vérifiés et prêts à vous accompagner.</p>
+-            </div><a class="btn light" href="Prof.html">Ouvrir l’annuaire</a>
+-        </section>
+-    </main>
+-    <footer>
+-        <div class="wrap footer-inner"><a class="brand light-brand" href="index.html"><span
+-                    class="brand-mark">BC</span><span>Berceau <b>Communautaire</b></span></a>
+-            <p>La plateforme numérique de votre quartier.</p>
+-            <div><a href="actualites.html">Actualités</a><a href="commerce.html">Commerces</a><a
+-                    href="Prof.html">Annuaire</a></div>
+-        </div>
+-        <div class="footer-bottom wrap">© 2026 Berceau Communautaire · Kinshasa, RDC</div>
+-    </footer>
+-    <script src="data.js"></script>
+-    <script src="app.js"></script>
+-</body>
+-
+-</html>
+\ No newline at end of file
++            <div class="footer-bottom wrap">© 2026 Berceau Communautaire · Kinshasa, RDC</div>
++        </footer>
++        <script src="data.js"></script>
++        <script src="app.js"></script>
++    </body>
++</html>
+diff --git a/profil.html b/profil.html
+index 6eb30ff..124a010 100644
+--- a/profil.html
++++ b/profil.html
+@@ -1 +1,12 @@
+-<!doctype html><html lang="fr"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Profil — Berceau Communautaire</title><link rel="stylesheet" href="style.css"></head><body><script>location.replace('Prof.html')</script></body></html>
++<!doctype html>
++<html lang="fr">
++    <head>
++        <meta charset="UTF-8">
++        <meta name="viewport" content="width=device-width,initial-scale=1">
++        <title>Profil — Berceau Communautaire</title>
++        <link rel="stylesheet" href="style.css">
++    </head>
++    <body>
++        <script>location.replace('Prof.html')</script>
++    </body>
++</html>
+diff --git a/style.css b/style.css
+index 24216f6..b10c872 100644
+--- a/style.css
++++ b/style.css
+@@ -1,3 +1,1038 @@
+-:root{--ink:#102033;--muted:#637083;--gold:#d4aa16;--gold2:#f1c83f;--soft:#fff8dd;--navy:#102238;--paper:#fff;--bg:#f6f7f4;--line:#e4e7e3;--green:#17765b;--red:#c2413b;--shadow:0 14px 40px #10203314;--radius:22px}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:Manrope,Poppins,sans-serif;line-height:1.6}body.modal-open{overflow:hidden}a{color:inherit;text-decoration:none}button,input,select,textarea{font:inherit}button{cursor:pointer}.wrap{width:min(1160px,calc(100% - 40px));margin:auto}.site-header{height:80px;padding:0 max(20px,calc((100% - 1160px)/2));display:flex;align-items:center;justify-content:space-between;background:#fffffff0;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:50;backdrop-filter:blur(14px);transition:.25s}.site-header.scrolled{height:68px;box-shadow:0 8px 24px #1020330f}.brand{display:flex;align-items:center;gap:11px;font-size:15px;line-height:1.05}.brand span:last-child{display:flex;flex-direction:column}.brand-mark{width:40px;height:40px;display:grid;place-items:center;background:var(--gold);color:#fff;border-radius:12px;font-weight:800}.main-nav{display:flex;gap:6px;align-items:center}.main-nav a{padding:10px 14px;border-radius:10px;font-size:14px;font-weight:700;color:#415064}.main-nav a:hover,.main-nav a.active{color:var(--ink);background:#f1f3ef}.main-nav .nav-cta{background:var(--ink);color:#fff;margin-left:8px}.nav-toggle{display:none;border:0;background:transparent;font-size:22px}.home-hero{min-height:610px;background:linear-gradient(115deg,#f9f3df,#fff 55%,#eef2ea);display:grid;grid-template-columns:1.08fr .92fr;align-items:center;gap:60px;padding:70px max(20px,calc((100% - 1160px)/2));overflow:hidden}.hero-copy{max-width:650px}.eyebrow{display:inline-flex;align-items:center;gap:8px;color:#96720c;font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.12em}.home-hero h1,.page-hero h1{font-size:clamp(42px,5.5vw,72px);line-height:1.06;letter-spacing:-.05em;margin:18px 0 22px}.home-hero h1 em{color:var(--gold);font-style:normal}.hero-copy>p,.page-hero p{font-size:18px;color:var(--muted);max-width:680px}.hero-actions{display:flex;gap:12px;margin-top:32px}.btn{min-height:48px;padding:0 20px;border-radius:12px;display:inline-flex;align-items:center;justify-content:center;font-weight:750;font-size:14px;border:1px solid transparent;transition:.2s}.btn:hover{transform:translateY(-2px)}.btn.primary{background:var(--ink);color:#fff}.btn.secondary{background:#fff;border-color:#d9ddd7}.btn.light{background:#fff;color:var(--ink)}.trust-row{display:flex;gap:22px;margin-top:28px;color:#66746e;font-size:13px}.trust-row i{color:var(--green)}.community-visual{min-height:390px;padding:28px;border-radius:32px;background:var(--navy);color:#fff;box-shadow:0 30px 70px #10223838;display:flex;flex-direction:column;justify-content:flex-end;position:relative;overflow:hidden}.community-visual:before{content:"";position:absolute;width:240px;height:240px;border-radius:50%;right:-70px;top:-80px;background:var(--gold)}.visual-label{position:absolute;top:28px;left:28px;font-size:12px;text-transform:uppercase;letter-spacing:.1em;color:#c8d3dd}.pulse-card{display:flex;align-items:center;gap:15px;background:#fff;color:var(--ink);padding:18px;border-radius:17px;position:relative}.pulse-card>i{width:44px;height:44px;border-radius:12px;background:var(--soft);color:var(--gold);display:grid;place-items:center}.pulse-card div{display:flex;flex-direction:column}.pulse-card small{color:var(--muted)}.pulse-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:12px}.pulse-grid div{background:#ffffff17;padding:18px;border-radius:16px;display:flex;flex-direction:column}.pulse-grid strong{font-size:28px;color:var(--gold2)}.pulse-grid span{font-size:12px;color:#cbd5df}.quick-links{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:-34px;position:relative}.quick-links>a{background:#fff;border:1px solid var(--line);box-shadow:var(--shadow);padding:20px;display:flex;align-items:center;gap:14px;border-radius:17px;transition:.2s}.quick-links>a:hover{transform:translateY(-4px)}.quick-links>a>span{width:45px;height:45px;border-radius:12px;background:var(--soft);color:#96720c;display:grid;place-items:center}.quick-links div{display:flex;flex:1;flex-direction:column}.quick-links small{color:var(--muted);font-size:12px}.section{padding:90px 0}.tinted{background:#eef1ed}.section-head{display:flex;align-items:end;justify-content:space-between;gap:20px;margin-bottom:30px}.section-head h2{font-size:clamp(30px,4vw,46px);line-height:1.15;letter-spacing:-.035em;margin:8px 0 0}.text-link{font-weight:750;font-size:14px}.editorial-grid{display:grid;grid-template-columns:1.4fr 1fr;grid-template-rows:repeat(2,1fr);gap:16px}.news-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;display:grid;grid-template-columns:150px 1fr;min-height:180px;transition:.2s}.news-card:hover,.shop-card:hover,.pro-card:hover{transform:translateY(-3px);box-shadow:var(--shadow)}.news-card.featured{grid-row:1/3;display:block}.news-image{min-height:100%;background:linear-gradient(135deg,#c89e19,#f2d66b);display:grid;place-items:center;color:#ffffffde;font-size:40px}.featured .news-image{height:270px}.news-content{padding:20px}.news-content h3{font-size:19px;line-height:1.35;margin:8px 0}.featured .news-content h3{font-size:28px}.news-content p{color:var(--muted);font-size:13px}.meta{color:#85909c;font-size:12px}.category{font-size:11px;text-transform:uppercase;letter-spacing:.08em;font-weight:800;color:#96720c}.shop-grid,.pro-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.shop-card,.pro-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;transition:.2s}.shop-cover{height:170px;background:linear-gradient(135deg,#e7d89d,#b88d14);display:grid;place-items:center;color:#fff;font-size:42px}.shop-body,.pro-body{padding:20px}.shop-top{display:flex;justify-content:space-between;gap:10px}.shop-body h3,.pro-body h3{margin:3px 0;font-size:19px}.shop-body p,.pro-body p{color:var(--muted);font-size:13px;margin:9px 0}.badge{display:inline-flex;align-items:center;gap:5px;color:var(--green);background:#eaf6f1;border-radius:20px;padding:5px 8px;font-size:10px;font-weight:800;white-space:nowrap}.card-footer{display:flex;align-items:center;justify-content:space-between;margin-top:16px;padding-top:14px;border-top:1px solid var(--line);font-size:12px}.community-cta{margin-top:90px;margin-bottom:90px;background:var(--navy);color:#fff;border-radius:28px;padding:52px 58px;display:flex;align-items:center;justify-content:space-between;gap:30px}.community-cta h2{font-size:38px;margin:9px 0}.community-cta p{color:#c5d0db;margin:0}.eyebrow.light{color:var(--gold2)}footer{background:#0c1929;color:#c7d1dc;padding:55px 0 20px}.footer-inner{display:grid;grid-template-columns:1fr 1fr 1fr;align-items:center}.light-brand{color:#fff}.footer-inner>div{display:flex;justify-content:flex-end;gap:22px;font-size:13px}.footer-bottom{margin-top:35px;border-top:1px solid #ffffff1a;padding-top:18px;font-size:12px}.page-hero{background:#fff;padding:70px 0 55px;border-bottom:1px solid var(--line)}.page-hero h1{font-size:clamp(38px,5vw,60px);margin-bottom:12px}.toolbar{display:grid;grid-template-columns:1fr 220px 180px auto;gap:10px;background:#fff;padding:14px;border-radius:17px;border:1px solid var(--line);margin:30px 0}.field{display:flex;align-items:center;gap:10px;border:1px solid var(--line);background:#fafbf9;border-radius:11px;padding:0 13px}.field input,.field select{width:100%;height:46px;border:0;background:transparent;outline:0}.result-row{display:flex;justify-content:space-between;align-items:center;margin:20px 0}.link-button{border:0;background:transparent;color:var(--muted);font-size:13px}.pro-card{padding:20px;display:flex;flex-direction:column}.pro-head{display:flex;gap:14px;align-items:center}.avatar{width:58px;height:58px;flex:none;border-radius:16px;background:var(--soft);color:#a37b0b;display:grid;place-items:center;font-size:21px}.pro-card .card-footer{margin-top:auto}.empty{grid-column:1/-1;padding:60px;text-align:center;color:var(--muted)}.article-layout{display:grid;grid-template-columns:minmax(0,760px) 1fr;gap:55px;padding:55px 0 90px}.article-main h1{font-size:clamp(36px,5vw,58px);line-height:1.1;letter-spacing:-.04em}.article-lead{font-size:20px;color:var(--muted)}.article-image{height:390px;border-radius:25px;background:linear-gradient(135deg,var(--navy),#395873);display:grid;place-items:center;color:#fff;font-size:70px;margin:28px 0}.article-copy{font-family:Georgia,serif;font-size:18px;line-height:1.9}.aside-card{position:sticky;top:95px;background:#fff;border:1px solid var(--line);padding:22px;border-radius:18px}.modal{position:fixed;inset:0;background:#060f19a6;z-index:100;display:none;align-items:center;justify-content:center;padding:20px}.modal.open{display:flex}.modal-card{background:#fff;width:min(680px,100%);max-height:90vh;overflow:auto;border-radius:24px;padding:28px;position:relative}.modal-close{position:absolute;right:18px;top:18px;border:0;width:38px;height:38px;border-radius:50%}.detail-cover{height:230px;border-radius:17px;background:linear-gradient(135deg,#ddbd4c,#91700c);display:grid;place-items:center;color:#fff;font-size:55px}.detail-actions{display:flex;gap:10px;margin-top:20px}.notice{background:#fff8dc;border:1px solid #ecd47a;color:#745a05;padding:13px;border-radius:12px;font-size:12px}.feedback{width:min(720px,calc(100% - 40px));margin:60px auto;background:#fff;padding:32px;border-radius:24px;border:1px solid var(--line)}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.form-grid .full{grid-column:1/-1}.form-grid label{font-size:12px;font-weight:800;display:block}.form-grid input,.form-grid textarea,.form-grid select{width:100%;padding:12px;border:1px solid var(--line);border-radius:10px}.form-grid textarea{min-height:130px}.filter-chips{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:25px}.filter-chips button{border:1px solid var(--line);background:#fff;padding:9px 14px;border-radius:20px}.filter-chips button.active{background:var(--ink);color:#fff}
+-@media(max-width:900px){.home-hero{grid-template-columns:1fr;padding-top:55px}.hero-panel{display:none}.quick-links{grid-template-columns:1fr;margin-top:20px}.editorial-grid{grid-template-columns:1fr;grid-template-rows:auto}.news-card.featured{grid-row:auto}.shop-grid,.pro-grid{grid-template-columns:repeat(2,1fr)}.toolbar{grid-template-columns:1fr 1fr}.toolbar .field:first-child{grid-column:1/-1}.article-layout{grid-template-columns:1fr}.article-aside{display:none}.footer-inner{grid-template-columns:1fr;text-align:center;gap:18px}.footer-inner .brand{justify-self:center}.footer-inner>div{justify-content:center}.main-nav{display:none;position:absolute;left:14px;right:14px;top:72px;background:#fff;border:1px solid var(--line);box-shadow:var(--shadow);padding:10px;border-radius:16px;flex-direction:column;align-items:stretch}.main-nav.open{display:flex}.main-nav .nav-cta{margin:0}.nav-toggle{display:block}}
+-@media(max-width:600px){.wrap{width:min(100% - 28px,1160px)}.site-header{height:68px;padding-inline:14px}.home-hero{min-height:auto;padding:48px 18px}.home-hero h1{font-size:43px}.hero-actions{flex-direction:column}.trust-row{flex-direction:column;gap:7px}.section{padding:65px 0}.section-head{align-items:start;flex-direction:column}.editorial-grid{display:block}.news-card,.news-card.featured{display:block;margin-bottom:14px}.news-card:not(.featured) .news-image{height:150px}.featured .news-content h3{font-size:23px}.shop-grid,.pro-grid{grid-template-columns:1fr}.community-cta{margin:60px 14px;width:auto;padding:30px 24px;flex-direction:column;align-items:flex-start}.toolbar{grid-template-columns:1fr}.toolbar .field:first-child{grid-column:auto}.page-hero{padding:46px 0 35px}.form-grid{grid-template-columns:1fr}.form-grid .full{grid-column:auto}.article-image{height:240px}.detail-actions{flex-direction:column}}
++/* Variables et styles de base */
++:root {
++    --ink: #102033;
++    --muted: #637083;
++    --gold: #d4aa16;
++    --gold2: #f1c83f;
++    --soft: #fff8dd;
++    --navy: #102238;
++    --paper: #fff;
++    --bg: #f6f7f4;
++    --line: #e4e7e3;
++    --green: #17765b;
++    --red: #c2413b;
++    --shadow: 0 14px 40px #10203314;
++    --radius: 22px
++}
++
++* {
++    box-sizing: border-box
++}
++
++html {
++    scroll-behavior: smooth
++}
++
++body {
++    margin: 0;
++    background: var(--bg);
++    color: var(--ink);
++    font-family: Manrope,Poppins,sans-serif;
++    line-height: 1.6
++}
++
++body.modal-open {
++    overflow: hidden
++}
++
++a {
++    color: inherit;
++    text-decoration: none
++}
++
++button,
++input,
++select,
++textarea {
++    font: inherit
++}
++
++button {
++    cursor: pointer
++}
++
++.wrap {
++    width: min(1160px,calc(100% - 40px));
++    margin: auto
++}
++
++/* Navigation principale */
++.site-header {
++    height: 80px;
++    padding: 0 max(20px,calc((100% - 1160px)/2));
++    display: flex;
++    align-items: center;
++    justify-content: space-between;
++    background: #fffffff0;
++    border-bottom: 1px solid var(--line);
++    position: sticky;
++    top: 0;
++    z-index: 50;
++    backdrop-filter: blur(14px);
++    transition: .25s
++}
++
++.site-header.scrolled {
++    height: 68px;
++    box-shadow: 0 8px 24px #1020330f
++}
++
++.brand {
++    display: flex;
++    align-items: center;
++    gap: 11px;
++    font-size: 15px;
++    line-height: 1.05
++}
++
++.brand span:last-child {
++    display: flex;
++    flex-direction: column
++}
++
++.brand-mark {
++    width: 40px;
++    height: 40px;
++    display: grid;
++    place-items: center;
++    background: var(--gold);
++    color: #fff;
++    border-radius: 12px;
++    font-weight: 800
++}
++
++.main-nav {
++    display: flex;
++    gap: 6px;
++    align-items: center
++}
++
++.main-nav a {
++    padding: 10px 14px;
++    border-radius: 10px;
++    font-size: 14px;
++    font-weight: 700;
++    color: #415064
++}
++
++.main-nav a:hover,
++.main-nav a.active {
++    color: var(--ink);
++    background: #f1f3ef
++}
++
++.main-nav .nav-cta {
++    background: var(--ink);
++    color: #fff;
++    margin-left: 8px
++}
++
++.nav-toggle {
++    display: none;
++    border: 0;
++    background: transparent;
++    font-size: 22px
++}
++
++/* Accueil et mise en avant */
++.home-hero {
++    min-height: 610px;
++    background: linear-gradient(115deg,#f9f3df,#fff 55%,#eef2ea);
++    display: grid;
++    grid-template-columns: 1.08fr .92fr;
++    align-items: center;
++    gap: 60px;
++    padding: 70px max(20px,calc((100% - 1160px)/2));
++    overflow: hidden
++}
++
++.hero-copy {
++    max-width: 650px
++}
++
++.eyebrow {
++    display: inline-flex;
++    align-items: center;
++    gap: 8px;
++    color: #96720c;
++    font-size: 12px;
++    font-weight: 800;
++    text-transform: uppercase;
++    letter-spacing: .12em
++}
++
++.home-hero h1,
++.page-hero h1 {
++    font-size: clamp(42px,5.5vw,72px);
++    line-height: 1.06;
++    letter-spacing: -.05em;
++    margin: 18px 0 22px
++}
++
++.home-hero h1 em {
++    color: var(--gold);
++    font-style: normal
++}
++
++.hero-copy>p,
++.page-hero p {
++    font-size: 18px;
++    color: var(--muted);
++    max-width: 680px
++}
++
++.hero-actions {
++    display: flex;
++    gap: 12px;
++    margin-top: 32px
++}
++
++.btn {
++    min-height: 48px;
++    padding: 0 20px;
++    border-radius: 12px;
++    display: inline-flex;
++    align-items: center;
++    justify-content: center;
++    font-weight: 750;
++    font-size: 14px;
++    border: 1px solid transparent;
++    transition: .2s
++}
++
++.btn:hover {
++    transform: translateY(-2px)
++}
++
++.btn.primary {
++    background: var(--ink);
++    color: #fff
++}
++
++.btn.secondary {
++    background: #fff;
++    border-color: #d9ddd7
++}
++
++.btn.light {
++    background: #fff;
++    color: var(--ink)
++}
++
++.trust-row {
++    display: flex;
++    gap: 22px;
++    margin-top: 28px;
++    color: #66746e;
++    font-size: 13px
++}
++
++.trust-row i {
++    color: var(--green)
++}
++
++.community-visual {
++    min-height: 390px;
++    padding: 28px;
++    border-radius: 32px;
++    background: var(--navy);
++    color: #fff;
++    box-shadow: 0 30px 70px #10223838;
++    display: flex;
++    flex-direction: column;
++    justify-content: flex-end;
++    position: relative;
++    overflow: hidden
++}
++
++.community-visual:before {
++    content: "";
++    position: absolute;
++    width: 240px;
++    height: 240px;
++    border-radius: 50%;
++    right: -70px;
++    top: -80px;
++    background: var(--gold)
++}
++
++.visual-label {
++    position: absolute;
++    top: 28px;
++    left: 28px;
++    font-size: 12px;
++    text-transform: uppercase;
++    letter-spacing: .1em;
++    color: #c8d3dd
++}
++
++.pulse-card {
++    display: flex;
++    align-items: center;
++    gap: 15px;
++    background: #fff;
++    color: var(--ink);
++    padding: 18px;
++    border-radius: 17px;
++    position: relative
++}
++
++.pulse-card>i {
++    width: 44px;
++    height: 44px;
++    border-radius: 12px;
++    background: var(--soft);
++    color: var(--gold);
++    display: grid;
++    place-items: center
++}
++
++.pulse-card div {
++    display: flex;
++    flex-direction: column
++}
++
++.pulse-card small {
++    color: var(--muted)
++}
++
++.pulse-grid {
++    display: grid;
++    grid-template-columns: 1fr 1fr;
++    gap: 12px;
++    margin-top: 12px
++}
++
++.pulse-grid div {
++    background: #ffffff17;
++    padding: 18px;
++    border-radius: 16px;
++    display: flex;
++    flex-direction: column
++}
++
++.pulse-grid strong {
++    font-size: 28px;
++    color: var(--gold2)
++}
++
++.pulse-grid span {
++    font-size: 12px;
++    color: #cbd5df
++}
++
++.quick-links {
++    display: grid;
++    grid-template-columns: repeat(3,1fr);
++    gap: 14px;
++    margin-top: -34px;
++    position: relative
++}
++
++.quick-links>a {
++    background: #fff;
++    border: 1px solid var(--line);
++    box-shadow: var(--shadow);
++    padding: 20px;
++    display: flex;
++    align-items: center;
++    gap: 14px;
++    border-radius: 17px;
++    transition: .2s
++}
++
++.quick-links>a:hover {
++    transform: translateY(-4px)
++}
++
++.quick-links>a>span {
++    width: 45px;
++    height: 45px;
++    border-radius: 12px;
++    background: var(--soft);
++    color: #96720c;
++    display: grid;
++    place-items: center
++}
++
++.quick-links div {
++    display: flex;
++    flex: 1;
++    flex-direction: column
++}
++
++.quick-links small {
++    color: var(--muted);
++    font-size: 12px
++}
++
++.section {
++    padding: 90px 0
++}
++
++.tinted {
++    background: #eef1ed
++}
++
++.section-head {
++    display: flex;
++    align-items: end;
++    justify-content: space-between;
++    gap: 20px;
++    margin-bottom: 30px
++}
++
++.section-head h2 {
++    font-size: clamp(30px,4vw,46px);
++    line-height: 1.15;
++    letter-spacing: -.035em;
++    margin: 8px 0 0
++}
++
++.text-link {
++    font-weight: 750;
++    font-size: 14px
++}
++
++.editorial-grid {
++    display: grid;
++    grid-template-columns: 1.4fr 1fr;
++    grid-template-rows: repeat(2,1fr);
++    gap: 16px
++}
++
++.news-card {
++    background: #fff;
++    border: 1px solid var(--line);
++    border-radius: var(--radius);
++    overflow: hidden;
++    display: grid;
++    grid-template-columns: 150px 1fr;
++    min-height: 180px;
++    transition: .2s
++}
++
++.news-card:hover,
++.shop-card:hover,
++.pro-card:hover {
++    transform: translateY(-3px);
++    box-shadow: var(--shadow)
++}
++
++.news-card.featured {
++    grid-row: 1/3;
++    display: block
++}
++
++.news-image {
++    min-height: 100%;
++    background: linear-gradient(135deg,#c89e19,#f2d66b);
++    display: grid;
++    place-items: center;
++    color: #ffffffde;
++    font-size: 40px
++}
++
++.featured .news-image {
++    height: 270px
++}
++
++.news-content {
++    padding: 20px
++}
++
++.news-content h3 {
++    font-size: 19px;
++    line-height: 1.35;
++    margin: 8px 0
++}
++
++.featured .news-content h3 {
++    font-size: 28px
++}
++
++.news-content p {
++    color: var(--muted);
++    font-size: 13px
++}
++
++.meta {
++    color: #85909c;
++    font-size: 12px
++}
++
++.category {
++    font-size: 11px;
++    text-transform: uppercase;
++    letter-spacing: .08em;
++    font-weight: 800;
++    color: #96720c
++}
++
++/* Actualités, commerces et annuaire */
++.shop-grid,
++.pro-grid {
++    display: grid;
++    grid-template-columns: repeat(3,1fr);
++    gap: 18px
++}
++
++.shop-card,
++.pro-card {
++    background: #fff;
++    border: 1px solid var(--line);
++    border-radius: var(--radius);
++    overflow: hidden;
++    transition: .2s
++}
++
++.shop-cover {
++    height: 170px;
++    background: linear-gradient(135deg,#e7d89d,#b88d14);
++    display: grid;
++    place-items: center;
++    color: #fff;
++    font-size: 42px
++}
++
++.shop-body,
++.pro-body {
++    padding: 20px
++}
++
++.shop-top {
++    display: flex;
++    justify-content: space-between;
++    gap: 10px
++}
++
++.shop-body h3,
++.pro-body h3 {
++    margin: 3px 0;
++    font-size: 19px
++}
++
++.shop-body p,
++.pro-body p {
++    color: var(--muted);
++    font-size: 13px;
++    margin: 9px 0
++}
++
++.badge {
++    display: inline-flex;
++    align-items: center;
++    gap: 5px;
++    color: var(--green);
++    background: #eaf6f1;
++    border-radius: 20px;
++    padding: 5px 8px;
++    font-size: 10px;
++    font-weight: 800;
++    white-space: nowrap
++}
++
++.card-footer {
++    display: flex;
++    align-items: center;
++    justify-content: space-between;
++    margin-top: 16px;
++    padding-top: 14px;
++    border-top: 1px solid var(--line);
++    font-size: 12px
++}
++
++.community-cta {
++    margin-top: 90px;
++    margin-bottom: 90px;
++    background: var(--navy);
++    color: #fff;
++    border-radius: 28px;
++    padding: 52px 58px;
++    display: flex;
++    align-items: center;
++    justify-content: space-between;
++    gap: 30px
++}
++
++.community-cta h2 {
++    font-size: 38px;
++    margin: 9px 0
++}
++
++.community-cta p {
++    color: #c5d0db;
++    margin: 0
++}
++
++.eyebrow.light {
++    color: var(--gold2)
++}
++
++footer {
++    background: #0c1929;
++    color: #c7d1dc;
++    padding: 55px 0 20px
++}
++
++.footer-inner {
++    display: grid;
++    grid-template-columns: 1fr 1fr 1fr;
++    align-items: center
++}
++
++.light-brand {
++    color: #fff
++}
++
++.footer-inner>div {
++    display: flex;
++    justify-content: flex-end;
++    gap: 22px;
++    font-size: 13px
++}
++
++.footer-bottom {
++    margin-top: 35px;
++    border-top: 1px solid #ffffff1a;
++    padding-top: 18px;
++    font-size: 12px
++}
++
++.page-hero {
++    background: #fff;
++    padding: 70px 0 55px;
++    border-bottom: 1px solid var(--line)
++}
++
++.page-hero h1 {
++    font-size: clamp(38px,5vw,60px);
++    margin-bottom: 12px
++}
++
++.toolbar {
++    display: grid;
++    grid-template-columns: 1fr 220px 180px auto;
++    gap: 10px;
++    background: #fff;
++    padding: 14px;
++    border-radius: 17px;
++    border: 1px solid var(--line);
++    margin: 30px 0
++}
++
++.field {
++    display: flex;
++    align-items: center;
++    gap: 10px;
++    border: 1px solid var(--line);
++    background: #fafbf9;
++    border-radius: 11px;
++    padding: 0 13px
++}
++
++.field input,
++.field select {
++    width: 100%;
++    height: 46px;
++    border: 0;
++    background: transparent;
++    outline: 0
++}
++
++.result-row {
++    display: flex;
++    justify-content: space-between;
++    align-items: center;
++    margin: 20px 0
++}
++
++.link-button {
++    border: 0;
++    background: transparent;
++    color: var(--muted);
++    font-size: 13px
++}
++
++.pro-card {
++    padding: 20px;
++    display: flex;
++    flex-direction: column
++}
++
++.pro-head {
++    display: flex;
++    gap: 14px;
++    align-items: center
++}
++
++.avatar {
++    width: 58px;
++    height: 58px;
++    flex: none;
++    border-radius: 16px;
++    background: var(--soft);
++    color: #a37b0b;
++    display: grid;
++    place-items: center;
++    font-size: 21px
++}
++
++.pro-card .card-footer {
++    margin-top: auto
++}
++
++.empty {
++    grid-column: 1/-1;
++    padding: 60px;
++    text-align: center;
++    color: var(--muted)
++}
++
++/* Articles, fenêtres et formulaires */
++.article-layout {
++    display: grid;
++    grid-template-columns: minmax(0,760px) 1fr;
++    gap: 55px;
++    padding: 55px 0 90px
++}
++
++.article-main h1 {
++    font-size: clamp(36px,5vw,58px);
++    line-height: 1.1;
++    letter-spacing: -.04em
++}
++
++.article-lead {
++    font-size: 20px;
++    color: var(--muted)
++}
++
++.article-image {
++    height: 390px;
++    border-radius: 25px;
++    background: linear-gradient(135deg,var(--navy),#395873);
++    display: grid;
++    place-items: center;
++    color: #fff;
++    font-size: 70px;
++    margin: 28px 0
++}
++
++.article-copy {
++    font-family: Georgia,serif;
++    font-size: 18px;
++    line-height: 1.9
++}
++
++.aside-card {
++    position: sticky;
++    top: 95px;
++    background: #fff;
++    border: 1px solid var(--line);
++    padding: 22px;
++    border-radius: 18px
++}
++
++.modal {
++    position: fixed;
++    inset: 0;
++    background: #060f19a6;
++    z-index: 100;
++    display: none;
++    align-items: center;
++    justify-content: center;
++    padding: 20px
++}
++
++.modal.open {
++    display: flex
++}
++
++.modal-card {
++    background: #fff;
++    width: min(680px,100%);
++    max-height: 90vh;
++    overflow: auto;
++    border-radius: 24px;
++    padding: 28px;
++    position: relative
++}
++
++.modal-close {
++    position: absolute;
++    right: 18px;
++    top: 18px;
++    border: 0;
++    width: 38px;
++    height: 38px;
++    border-radius: 50%
++}
++
++.detail-cover {
++    height: 230px;
++    border-radius: 17px;
++    background: linear-gradient(135deg,#ddbd4c,#91700c);
++    display: grid;
++    place-items: center;
++    color: #fff;
++    font-size: 55px
++}
++
++.detail-actions {
++    display: flex;
++    gap: 10px;
++    margin-top: 20px
++}
++
++.notice {
++    background: #fff8dc;
++    border: 1px solid #ecd47a;
++    color: #745a05;
++    padding: 13px;
++    border-radius: 12px;
++    font-size: 12px
++}
++
++.feedback {
++    width: min(720px,calc(100% - 40px));
++    margin: 60px auto;
++    background: #fff;
++    padding: 32px;
++    border-radius: 24px;
++    border: 1px solid var(--line)
++}
++
++.form-grid {
++    display: grid;
++    grid-template-columns: 1fr 1fr;
++    gap: 14px
++}
++
++.form-grid .full {
++    grid-column: 1/-1
++}
++
++.form-grid label {
++    font-size: 12px;
++    font-weight: 800;
++    display: block
++}
++
++.form-grid input,
++.form-grid textarea,
++.form-grid select {
++    width: 100%;
++    padding: 12px;
++    border: 1px solid var(--line);
++    border-radius: 10px
++}
++
++.form-grid textarea {
++    min-height: 130px
++}
++
++.filter-chips {
++    display: flex;
++    gap: 8px;
++    flex-wrap: wrap;
++    margin-bottom: 25px
++}
++
++.filter-chips button {
++    border: 1px solid var(--line);
++    background: #fff;
++    padding: 9px 14px;
++    border-radius: 20px
++}
++
++.filter-chips button.active {
++    background: var(--ink);
++    color: #fff
++}
++
++/* Adaptation tablette */
++@media(max-width:900px) {
++    .home-hero {
++        grid-template-columns: 1fr;
++        padding-top: 55px
++    }
++
++    .hero-panel {
++        display: none
++    }
++
++    .quick-links {
++        grid-template-columns: 1fr;
++        margin-top: 20px
++    }
++
++    .editorial-grid {
++        grid-template-columns: 1fr;
++        grid-template-rows: auto
++    }
++
++    .news-card.featured {
++        grid-row: auto
++    }
++
++    .shop-grid,
++    .pro-grid {
++        grid-template-columns: repeat(2,1fr)
++    }
++
++    .toolbar {
++        grid-template-columns: 1fr 1fr
++    }
++
++    .toolbar .field:first-child {
++        grid-column: 1/-1
++    }
++
++    .article-layout {
++        grid-template-columns: 1fr
++    }
++
++    .article-aside {
++        display: none
++    }
++
++    .footer-inner {
++        grid-template-columns: 1fr;
++        text-align: center;
++        gap: 18px
++    }
++
++    .footer-inner .brand {
++        justify-self: center
++    }
++
++    .footer-inner>div {
++        justify-content: center
++    }
++
++    .main-nav {
++        display: none;
++        position: absolute;
++        left: 14px;
++        right: 14px;
++        top: 72px;
++        background: #fff;
++        border: 1px solid var(--line);
++        box-shadow: var(--shadow);
++        padding: 10px;
++        border-radius: 16px;
++        flex-direction: column;
++        align-items: stretch
++    }
++
++    .main-nav.open {
++        display: flex
++    }
++
++    .main-nav .nav-cta {
++        margin: 0
++    }
++
++    .nav-toggle {
++        display: block
++    }
++}
++
++/* Adaptation mobile */
++@media(max-width:600px) {
++    .wrap {
++        width: min(100% - 28px,1160px)
++    }
++
++    .site-header {
++        height: 68px;
++        padding-inline: 14px
++    }
++
++    .home-hero {
++        min-height: auto;
++        padding: 48px 18px
++    }
++
++    .home-hero h1 {
++        font-size: 43px
++    }
++
++    .hero-actions {
++        flex-direction: column
++    }
++
++    .trust-row {
++        flex-direction: column;
++        gap: 7px
++    }
++
++    .section {
++        padding: 65px 0
++    }
++
++    .section-head {
++        align-items: start;
++        flex-direction: column
++    }
++
++    .editorial-grid {
++        display: block
++    }
++
++    .news-card,
++    .news-card.featured {
++        display: block;
++        margin-bottom: 14px
++    }
++
++    .news-card:not(.featured) .news-image {
++        height: 150px
++    }
++
++    .featured .news-content h3 {
++        font-size: 23px
++    }
++
++    .shop-grid,
++    .pro-grid {
++        grid-template-columns: 1fr
++    }
++
++    .community-cta {
++        margin: 60px 14px;
++        width: auto;
++        padding: 30px 24px;
++        flex-direction: column;
++        align-items: flex-start
++    }
++
++    .toolbar {
++        grid-template-columns: 1fr
++    }
++
++    .toolbar .field:first-child {
++        grid-column: auto
++    }
++
++    .page-hero {
++        padding: 46px 0 35px
++    }
++
++    .form-grid {
++        grid-template-columns: 1fr
++    }
++
++    .form-grid .full {
++        grid-column: auto
++    }
++
++    .article-image {
++        height: 240px
++    }
++
++    .detail-actions {
++        flex-direction: column
++    }
++}
